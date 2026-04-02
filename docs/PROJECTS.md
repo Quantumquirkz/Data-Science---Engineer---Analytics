@@ -29,6 +29,8 @@ Portfolio implementation available in `labs/seismic_signal_classification/`.
 **Description:** Predict short-term solar radiation using weather data, cloud indicators, and historical irradiance measurements.  
 **Theoretical stack:** Time series forecasting, stochastic processes, regression, atmospheric physics basics, gradient boosting, uncertainty estimation.
 
+Portfolio implementation available in `labs/solar_irradiance_forecasting/`.
+
 ## 4. Particle Diffusion Monte Carlo Simulator
 
 **Description:** Simulate Brownian motion and compare empirical distributions against analytical diffusion equations.  

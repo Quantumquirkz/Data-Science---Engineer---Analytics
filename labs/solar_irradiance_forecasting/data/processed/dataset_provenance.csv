@@ -1,0 +1,2 @@
+source,url,documentation,latitude,longitude,start_date,end_date
+Open-Meteo Archive API,https://archive-api.open-meteo.com/v1/archive,https://open-meteo.com/en/docs/historical-weather-api,40.4168,-3.7038,2023-01-01,2023-12-31

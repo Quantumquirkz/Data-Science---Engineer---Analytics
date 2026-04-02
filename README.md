@@ -46,6 +46,7 @@ Content is expected to grow by **labs** or topical folders. The repo now mixes a
 - **`labs/Lab1/`** — First lab area; start with `Lab1_Gradio.ipynb` for interactive analysis and demo-style interfaces.
 - **`labs/sensor_drift_detection/`** — Modular portfolio project for industrial drift detection.
 - **`labs/seismic_signal_classification/`** — Modular geophysical signal-classification project with preprocessing, features, modeling, notebook, and Gradio demo.
+- **`labs/solar_irradiance_forecasting/`** — Short-term GHI forecasting with Open-Meteo data, solar geometry features, LightGBM quantiles, notebook, and Gradio demo.
 - **`docs/PROJECTS.md`** — Project idea catalog and supporting reference material.
 - **`pyproject.toml`** — Project metadata and Python dependencies (managed with **uv**).
 - **`uv.lock`** — Locked versions for reproducible installs.

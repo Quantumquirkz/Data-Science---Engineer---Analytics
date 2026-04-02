@@ -9,6 +9,7 @@ dependencies = [
     "customtkinter>=5.2.2",
     "datasets>=4.8.4",
     "gradio>=6.10.0",
+    "holidays>=0.87",
     "graphviz>=0.21",
     "ipykernel>=7.2.0",
     "jupyter>=1.1.1",

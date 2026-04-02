@@ -1,0 +1,4 @@
+name,role,url,notes
+INSTANCE,reference_taxonomy,https://doi.org/10.13127/instance,Reference dataset for earthquake and background noise classes.
+Seismic ambient noise classification scheme,microseism_proxy_reference,https://zenodo.org/records/7494745,Surface-wave dominated slices motivate the microseism proxy class.
+STEAD,external_validation_reference,https://doi.org/10.1109/ACCESS.2019.2947848,Secondary benchmark for future external generalization checks.

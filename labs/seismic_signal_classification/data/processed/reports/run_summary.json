@@ -1,0 +1,95 @@
+{
+  "dataset": {
+    "config": {
+      "n_samples_per_class": 180,
+      "duration_seconds": 60.0,
+      "sample_rate_hz": 20.0,
+      "random_seed": 42,
+      "val_size": 0.2,
+      "test_size": 0.2,
+      "n_stations": 18
+    },
+    "class_counts": {
+      "earthquakes": 240,
+      "microseisms": 240,
+      "noise": 240
+    },
+    "split_counts": [
+      {
+        "split": "test",
+        "label": "earthquakes",
+        "count": 53
+      },
+      {
+        "split": "test",
+        "label": "microseisms",
+        "count": 54
+      },
+      {
+        "split": "test",
+        "label": "noise",
+        "count": 55
+      },
+      {
+        "split": "train",
+        "label": "earthquakes",
+        "count": 134
+      },
+      {
+        "split": "train",
+        "label": "microseisms",
+        "count": 134
+      },
+      {
+        "split": "train",
+        "label": "noise",
+        "count": 133
+      },
+      {
+        "split": "validation",
+        "label": "earthquakes",
+        "count": 53
+      },
+      {
+        "split": "validation",
+        "label": "microseisms",
+        "count": 52
+      },
+      {
+        "split": "validation",
+        "label": "noise",
+        "count": 52
+      }
+    ],
+    "n_stations": 18
+  },
+  "preprocessing": {
+    "lowcut_hz": 0.05,
+    "highcut_hz": 8.0,
+    "filter_order": 4,
+    "normalize": true,
+    "taper_fraction": 0.05
+  },
+  "features": {
+    "spectral_bands_hz": [
+      [
+        0.05,
+        0.2
+      ],
+      [
+        0.2,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ],
+      [
+        3.0,
+        8.0
+      ]
+    ],
+    "wavelet_levels": 4
+  },
+  "best_model": "logistic_regression"
+}

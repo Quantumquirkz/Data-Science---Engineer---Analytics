@@ -1,0 +1,5 @@
+model,split,accuracy,macro_f1,weighted_f1,log_loss,multiclass_brier
+logistic_regression,validation,1.0,1.0,1.0,0.0033496622348380507,8.972081992162311e-05
+logistic_regression,test,1.0,1.0,1.0,0.0026302155954474778,3.7094288034560674e-05
+calibrated_random_forest,validation,1.0,1.0,1.0,0.022403210257685532,0.0007626330806361375
+calibrated_random_forest,test,1.0,1.0,1.0,0.022302508693271147,0.0007416273320054883

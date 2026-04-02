@@ -43,6 +43,8 @@ Portfolio implementation available in `labs/particle_diffusion_mc/`.
 **Description:** Forecast regional power demand using seasonal patterns, temperature, and event calendars.  
 **Theoretical stack:** Time series decomposition, regression, optimization, energy systems basics, state-space models, ensemble methods.
 
+Portfolio implementation available in `labs/power_grid_load_forecasting/`.
+
 ## 6. Fluid Flow Surrogate Model
 
 **Description:** Train a machine learning model to approximate outputs of expensive fluid dynamics simulations.  

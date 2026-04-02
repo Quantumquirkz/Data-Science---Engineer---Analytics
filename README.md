@@ -47,6 +47,7 @@ Content is expected to grow by **labs** or topical folders. The repo now mixes a
 - **`labs/sensor_drift_detection/`** — Modular portfolio project for industrial drift detection.
 - **`labs/seismic_signal_classification/`** — Modular geophysical signal-classification project with preprocessing, features, modeling, notebook, and Gradio demo.
 - **`labs/solar_irradiance_forecasting/`** — Short-term GHI forecasting with Open-Meteo data, solar geometry features, LightGBM quantiles, notebook, and Gradio demo.
+- **`labs/power_grid_load_forecasting/`** — Regional hourly load (OPSD) with weather, holidays, SARIMAX benchmark, LightGBM quantiles, optimized ensemble, notebook, and Gradio demo.
 - **`labs/particle_diffusion_mc/`** — Brownian motion Monte Carlo, heat-kernel comparison, MSD and Rayleigh diagnostics, notebook, and Gradio demo.
 - **`docs/PROJECTS.md`** — Project idea catalog and supporting reference material.
 - **`pyproject.toml`** — Project metadata and Python dependencies (managed with **uv**).

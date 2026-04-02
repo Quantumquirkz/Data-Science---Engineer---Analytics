@@ -1,0 +1,3 @@
+source,url,documentation,load_column,start_date,end_date,latitude,longitude
+OPSD time_series_60min_singleindex,https://data.open-power-system-data.org/time_series/latest/time_series_60min_singleindex.csv,https://open-power-system-data.org/time_series/,DE_load_actual_entsoe_transparency,2017-01-01,2018-12-31,,
+Open-Meteo Archive API,https://archive-api.open-meteo.com/v1/archive,https://open-meteo.com/en/docs/historical-weather-api,,2017-01-01,2018-12-31,52.52,13.405

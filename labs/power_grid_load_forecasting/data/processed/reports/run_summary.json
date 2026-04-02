@@ -1,0 +1,78 @@
+{
+  "dataset": {
+    "n_rows": 17520,
+    "time_start": "2017-01-01T00:00:00+00:00",
+    "time_end": "2018-12-31T23:00:00+00:00",
+    "split_counts": {
+      "train": 16055,
+      "validation": 1465
+    },
+    "load_mw_median": 56223.5,
+    "load_mw_p95": 71768.1,
+    "temperature_c_median": 10.4
+  },
+  "preprocessing": {
+    "forward_fill_limit_hours": 3,
+    "clip_load_non_negative": true
+  },
+  "features": {
+    "forecast_horizons_hours": [
+      24,
+      168
+    ],
+    "load_lag_hours": [
+      1,
+      2,
+      3,
+      6,
+      12,
+      24,
+      48,
+      168
+    ],
+    "rolling_windows_hours": [
+      6,
+      24,
+      168
+    ],
+    "hdd_cdd_base_c": 18.0
+  },
+  "best_point_model": "ensemble_nonneg_weights",
+  "forecast_horizons": [
+    24,
+    168
+  ],
+  "sarimax_fitted": true,
+  "ensemble_weights": {
+    "24": [
+      0.0,
+      0.0,
+      0.0,
+      0.8051961140937937,
+      0.19480388590620634
+    ],
+    "168": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "ensemble_component_names": {
+    "24": [
+      "naive_calendar",
+      "hour_dow_median",
+      "ridge",
+      "hgb",
+      "lgb_q50"
+    ],
+    "168": [
+      "naive_calendar",
+      "hour_dow_median",
+      "ridge",
+      "hgb",
+      "lgb_q50"
+    ]
+  }
+}

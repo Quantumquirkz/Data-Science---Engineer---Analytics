@@ -1,0 +1,17 @@
+{
+  "simulation": {
+    "sigma": 1.0,
+    "T": 1.0,
+    "n_steps": 100,
+    "n_paths": 2000,
+    "random_seed": 42,
+    "include_2d": true
+  },
+  "figures": {
+    "paths_1d": "labs/particle_diffusion_mc/data/processed/reports/fig_sample_paths_1d.png",
+    "hist_1d": "labs/particle_diffusion_mc/data/processed/reports/fig_histogram_endpoint_1d.png",
+    "msd_1d": "labs/particle_diffusion_mc/data/processed/reports/fig_msd_1d.png",
+    "msd_2d": "labs/particle_diffusion_mc/data/processed/reports/fig_msd_2d.png",
+    "scatter_2d": "labs/particle_diffusion_mc/data/processed/reports/fig_2d_endpoints_rayleigh.png"
+  }
+}

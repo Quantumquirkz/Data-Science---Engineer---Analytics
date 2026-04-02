@@ -1,0 +1,9 @@
+metric,value
+ks_statistic_1d_endpoint,0.018343033119178065
+ks_pvalue_1d_endpoint,0.5055964442024565
+histogram_l2_1d_endpoint,0.06110814910577964
+msd_rmse_1d,0.004299698993638559
+ks_statistic_2d_rayleigh,0.02950654003010117
+ks_pvalue_2d_rayleigh,0.06024198327950525
+histogram_l2_2d_rayleigh,0.08426314534473775
+msd_rmse_2d,0.021105535066636878

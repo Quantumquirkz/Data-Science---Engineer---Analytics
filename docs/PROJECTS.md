@@ -36,6 +36,8 @@ Portfolio implementation available in `labs/solar_irradiance_forecasting/`.
 **Description:** Simulate Brownian motion and compare empirical distributions against analytical diffusion equations.  
 **Theoretical stack:** Stochastic calculus intuition, Monte Carlo methods, random walks, partial differential equations, numerical simulation.
 
+Portfolio implementation available in `labs/particle_diffusion_mc/`.
+
 ## 5. Power Grid Load Forecasting
 
 **Description:** Forecast regional power demand using seasonal patterns, temperature, and event calendars.  

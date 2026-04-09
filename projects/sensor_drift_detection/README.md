@@ -68,13 +68,13 @@ The lab labels windows using injected drift episodes and reports:
 From the repository root:
 
 ```bash
-uv run python labs/sensor_drift_detection/app.py
+uv run python projects/sensor_drift_detection/app.py
 ```
 
 For a quick non-UI sanity check:
 
 ```bash
-uv run python -c "from labs.sensor_drift_detection.src.pipeline import run_sensor_drift_pipeline; raw_df, windows_df, metrics_df, metadata = run_sensor_drift_pipeline(); print(metrics_df.round(3).to_string(index=False))"
+uv run python -c "from projects.sensor_drift_detection.src.pipeline import run_sensor_drift_pipeline; raw_df, windows_df, metrics_df, metadata = run_sensor_drift_pipeline(); print(metrics_df.round(3).to_string(index=False))"
 ```
 
 Open the notebook in JupyterLab if you want a guided walkthrough:
@@ -83,7 +83,7 @@ Open the notebook in JupyterLab if you want a guided walkthrough:
 uv run jupyter lab
 ```
 
-Then open `labs/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb`.
+Then open `projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb`.
 
 ## Suggested extensions
 

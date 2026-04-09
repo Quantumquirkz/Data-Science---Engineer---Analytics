@@ -28,27 +28,33 @@ flowchart LR
 flowchart TB
   root[RepositoryRoot]
   root --> labsDir[labs]
+  root --> projectsDir[projects]
   root --> docsDir[docs]
   root --> cfg[pyproject_toml_and_uv_lock]
   labsDir --> lab1Dir[Lab1]
-  lab1Dir --> notebooks[Jupyter_notebooks]
-  lab1Dir --> ui[GradioAndHelperScripts]
+  labsDir --> lab2Dir[Lab2]
+  lab1Dir --> courseNB1[Course_notebooks]
+  lab2Dir --> courseNB2[Course_notebooks_and_data]
+  projectsDir --> portfolio[Portfolio_projects_src_notebooks_demos]
   cfg --> env[uv_sync_managed_venv]
-  env --> notebooks
-  env --> ui
+  env --> courseNB1
+  env --> courseNB2
+  env --> portfolio
 ```
 
-Content is expected to grow by **labs** or topical folders. The repo now mixes an older notebook-first area in **`labs/Lab1/`** with project-style folders such as **`labs/sensor_drift_detection/`** and **`labs/seismic_signal_classification/`**, each pairing reusable `src/` code with notebooks and lightweight demos. Supporting written material lives in **`docs/`**, while the repository root stays focused on project configuration and top-level guidance.
+**`labs/`** holds **course labs** (Lab 1, Lab 2, …). **`projects/`** holds **portfolio-style** work: modular `src/` code, notebooks, data, and Gradio demos (for example **`projects/sensor_drift_detection/`** and **`projects/seismic_signal_classification/`**). Supporting material lives in **`docs/`**; the repository root keeps configuration and this README.
 
 ## Repository layout
 
-- **`labs/`** — Practical lab content, including notebooks and small demo-oriented scripts.
-- **`labs/Lab1/`** — First lab area; start with `Lab1_Gradio.ipynb` for interactive analysis and demo-style interfaces.
-- **`labs/sensor_drift_detection/`** — Modular portfolio project for industrial drift detection.
-- **`labs/seismic_signal_classification/`** — Modular geophysical signal-classification project with preprocessing, features, modeling, notebook, and Gradio demo.
-- **`labs/solar_irradiance_forecasting/`** — Short-term GHI forecasting with Open-Meteo data, solar geometry features, LightGBM quantiles, notebook, and Gradio demo.
-- **`labs/power_grid_load_forecasting/`** — Regional hourly load (OPSD) with weather, holidays, SARIMAX benchmark, LightGBM quantiles, optimized ensemble, notebook, and Gradio demo.
-- **`labs/particle_diffusion_mc/`** — Brownian motion Monte Carlo, heat-kernel comparison, MSD and Rayleigh diagnostics, notebook, and Gradio demo.
+- **`labs/`** — Course lab notebooks and related assets (statistics, Gradio, pandas, etc.).
+- **`labs/Lab1/`** — First lab; start with `Lab1_Gradio.ipynb` for interactive demos with Gradio.
+- **`labs/Lab2/`** — Second lab; see `Lab2_EstadisticaPandas.ipynb` and bundled CSV datasets for pandas and statistics exercises.
+- **`projects/`** — Self-contained portfolio projects (pipelines, `src/`, notebooks, optional `app.py`).
+- **`projects/sensor_drift_detection/`** — Modular portfolio project for industrial drift detection.
+- **`projects/seismic_signal_classification/`** — Modular geophysical signal-classification project with preprocessing, features, modeling, notebook, and Gradio demo.
+- **`projects/solar_irradiance_forecasting/`** — Short-term GHI forecasting with Open-Meteo data, solar geometry features, LightGBM quantiles, notebook, and Gradio demo.
+- **`projects/power_grid_load_forecasting/`** — Regional hourly load (OPSD) with weather, holidays, SARIMAX benchmark, LightGBM quantiles, optimized ensemble, notebook, and Gradio demo.
+- **`projects/particle_diffusion_mc/`** — Brownian motion Monte Carlo, heat-kernel comparison, MSD and Rayleigh diagnostics, notebook, and Gradio demo.
 - **`docs/PROJECTS.md`** — Project idea catalog and supporting reference material.
 - **`pyproject.toml`** — Project metadata and Python dependencies (managed with **uv**).
 - **`uv.lock`** — Locked versions for reproducible installs.
@@ -132,7 +138,7 @@ For interactive work, open **JupyterLab** from the project environment:
 uv run jupyter lab
 ```
 
-Then open **`labs/Lab1/Lab1_Gradio.ipynb`** for guided exercises, or explore project notebooks such as **`labs/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb`** and **`labs/seismic_signal_classification/notebooks/seismic_signal_classification.ipynb`** for more modular end-to-end labs. Individual notebooks may launch Gradio apps or other interfaces as described in their own cells.
+Then open **`labs/Lab1/Lab1_Gradio.ipynb`** or **`labs/Lab2/Lab2_EstadisticaPandas.ipynb`** for course labs, or explore project notebooks such as **`projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb`** and **`projects/seismic_signal_classification/notebooks/seismic_signal_classification.ipynb`**. Individual notebooks may launch Gradio apps or other interfaces as described in their own cells.
 
 ## License
 

@@ -94,13 +94,13 @@ ambient background.
 From the repository root:
 
 ```bash
-uv run python -c "from pathlib import Path; from labs.seismic_signal_classification.src.pipeline import run_seismic_classification_pipeline; artifacts = run_seismic_classification_pipeline(Path('labs/seismic_signal_classification')); print(artifacts.model_artifacts.summary_table.round(3).to_string(index=False))"
+uv run python -c "from pathlib import Path; from projects.seismic_signal_classification.src.pipeline import run_seismic_classification_pipeline; artifacts = run_seismic_classification_pipeline(Path('projects/seismic_signal_classification')); print(artifacts.model_artifacts.summary_table.round(3).to_string(index=False))"
 ```
 
 To launch the demo:
 
 ```bash
-uv run python labs/seismic_signal_classification/app.py
+uv run python projects/seismic_signal_classification/app.py
 ```
 
 To explore the notebook:
@@ -109,7 +109,7 @@ To explore the notebook:
 uv run jupyter lab
 ```
 
-Then open `labs/seismic_signal_classification/notebooks/seismic_signal_classification.ipynb`.
+Then open `projects/seismic_signal_classification/notebooks/seismic_signal_classification.ipynb`.
 
 ## Dataset notes
 

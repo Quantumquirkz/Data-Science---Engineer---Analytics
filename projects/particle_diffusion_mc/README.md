@@ -19,13 +19,13 @@ Monte Carlo simulation of **Brownian motion** and comparison of empirical distri
 ## Run (repository root)
 
 ```bash
-uv run python -c "from pathlib import Path; from labs.particle_diffusion_mc.src.pipeline import run_particle_diffusion_demo; a = run_particle_diffusion_demo(Path('labs/particle_diffusion_mc')); print(a.metrics_df.to_string(index=False))"
+uv run python -c "from pathlib import Path; from projects.particle_diffusion_mc.src.pipeline import run_particle_diffusion_demo; a = run_particle_diffusion_demo(Path('projects/particle_diffusion_mc')); print(a.metrics_df.to_string(index=False))"
 ```
 
 Gradio:
 
 ```bash
-uv run python labs/particle_diffusion_mc/app.py
+uv run python projects/particle_diffusion_mc/app.py
 ```
 
 ## Suggested extensions

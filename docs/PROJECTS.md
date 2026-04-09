@@ -17,33 +17,35 @@ Each project includes:
 **Description:** Build a system to detect long-term drift in temperature, pressure, or vibration sensors from industrial equipment using public telemetry datasets or simulated streaming data with historical baselines.  
 **Theoretical stack:** Time series analysis, signal processing, statistical process control, anomaly detection, hypothesis testing, feature engineering.
 
+Portfolio implementation available in `projects/sensor_drift_detection/`.
+
 ## 2. Earthquake Signal Classification
 
 **Description:** Classify seismic events into noise, microseisms, and earthquakes using waveform data from geophysical sensors.  
 **Theoretical stack:** Fourier analysis, wavelets, digital filtering, supervised learning, probabilistic classification, geophysical signal interpretation.
 
-Portfolio implementation available in `labs/seismic_signal_classification/`.
+Portfolio implementation available in `projects/seismic_signal_classification/`.
 
 ## 3. Solar Irradiance Forecasting
 
 **Description:** Predict short-term solar radiation using weather data, cloud indicators, and historical irradiance measurements.  
 **Theoretical stack:** Time series forecasting, stochastic processes, regression, atmospheric physics basics, gradient boosting, uncertainty estimation.
 
-Portfolio implementation available in `labs/solar_irradiance_forecasting/`.
+Portfolio implementation available in `projects/solar_irradiance_forecasting/`.
 
 ## 4. Particle Diffusion Monte Carlo Simulator
 
 **Description:** Simulate Brownian motion and compare empirical distributions against analytical diffusion equations.  
 **Theoretical stack:** Stochastic calculus intuition, Monte Carlo methods, random walks, partial differential equations, numerical simulation.
 
-Portfolio implementation available in `labs/particle_diffusion_mc/`.
+Portfolio implementation available in `projects/particle_diffusion_mc/`.
 
 ## 5. Power Grid Load Forecasting
 
 **Description:** Forecast regional power demand using seasonal patterns, temperature, and event calendars.  
 **Theoretical stack:** Time series decomposition, regression, optimization, energy systems basics, state-space models, ensemble methods.
 
-Portfolio implementation available in `labs/power_grid_load_forecasting/`.
+Portfolio implementation available in `projects/power_grid_load_forecasting/`.
 
 ## 6. Fluid Flow Surrogate Model
 

@@ -28,13 +28,13 @@ The OPSD URL `.../time_series/latest/...csv` redirects to a **versioned snapshot
 From the repository root (set `PYTHONPATH` to the repo root):
 
 ```bash
-PYTHONPATH=. uv run python -c "from pathlib import Path; from labs.power_grid_load_forecasting.src.pipeline import run_power_grid_load_pipeline; a = run_power_grid_load_pipeline(Path('labs/power_grid_load_forecasting')); print(a.model_artifacts.metrics.round(3).to_string(index=False))"
+PYTHONPATH=. uv run python -c "from pathlib import Path; from projects.power_grid_load_forecasting.src.pipeline import run_power_grid_load_pipeline; a = run_power_grid_load_pipeline(Path('projects/power_grid_load_forecasting')); print(a.model_artifacts.metrics.round(3).to_string(index=False))"
 ```
 
 Gradio:
 
 ```bash
-PYTHONPATH=. uv run python labs/power_grid_load_forecasting/app.py
+PYTHONPATH=. uv run python projects/power_grid_load_forecasting/app.py
 ```
 
 Notebook:
@@ -43,7 +43,7 @@ Notebook:
 uv run jupyter lab
 ```
 
-Open `labs/power_grid_load_forecasting/notebooks/power_grid_load_forecasting.ipynb`.
+Open `projects/power_grid_load_forecasting/notebooks/power_grid_load_forecasting.ipynb`.
 
 ## Suggested extensions
 

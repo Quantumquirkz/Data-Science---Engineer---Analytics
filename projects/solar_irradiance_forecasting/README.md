@@ -22,13 +22,13 @@ Uncertainty is handled with **LightGBM quantile regression** (10%, 50%, 90%) and
 From the repository root:
 
 ```bash
-uv run python -c "from pathlib import Path; from labs.solar_irradiance_forecasting.src.pipeline import run_solar_irradiance_pipeline; a = run_solar_irradiance_pipeline(Path('labs/solar_irradiance_forecasting')); print(a.model_artifacts.metrics.round(3).to_string(index=False))"
+uv run python -c "from pathlib import Path; from projects.solar_irradiance_forecasting.src.pipeline import run_solar_irradiance_pipeline; a = run_solar_irradiance_pipeline(Path('projects/solar_irradiance_forecasting')); print(a.model_artifacts.metrics.round(3).to_string(index=False))"
 ```
 
 Gradio:
 
 ```bash
-uv run python labs/solar_irradiance_forecasting/app.py
+uv run python projects/solar_irradiance_forecasting/app.py
 ```
 
 Notebook:
@@ -37,7 +37,7 @@ Notebook:
 uv run jupyter lab
 ```
 
-Open `labs/solar_irradiance_forecasting/notebooks/solar_irradiance_forecasting.ipynb`.
+Open `projects/solar_irradiance_forecasting/notebooks/solar_irradiance_forecasting.ipynb`.
 
 ## Data
 

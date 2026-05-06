@@ -49,12 +49,13 @@ flowchart TB
 - **`labs/`** — Course lab notebooks and related assets (statistics, Gradio, pandas, etc.).
 - **`labs/Lab1/`** — First lab; start with `Lab1_Gradio.ipynb` for interactive demos with Gradio.
 - **`labs/Lab2/`** — Second lab; see `Lab2_EstadisticaPandas.ipynb` and bundled CSV datasets for pandas and statistics exercises.
-- **`projects/`** — Self-contained portfolio projects (pipelines, `src/`, notebooks, optional `app.py`).
+- **`projects/`** — Self-contained portfolio projects (pipelines, `src/`, notebooks, Gradio demos). The catalog now continues from the first five hand-built examples into generated, reproducible implementations for projects 6-100.
 - **`projects/sensor_drift_detection/`** — Modular portfolio project for industrial drift detection.
 - **`projects/seismic_signal_classification/`** — Modular geophysical signal-classification project with preprocessing, features, modeling, notebook, and Gradio demo.
 - **`projects/solar_irradiance_forecasting/`** — Short-term GHI forecasting with Open-Meteo data, solar geometry features, LightGBM quantiles, notebook, and Gradio demo.
 - **`projects/power_grid_load_forecasting/`** — Regional hourly load (OPSD) with weather, holidays, SARIMAX benchmark, LightGBM quantiles, optimized ensemble, notebook, and Gradio demo.
 - **`projects/particle_diffusion_mc/`** — Brownian motion Monte Carlo, heat-kernel comparison, MSD and Rayleigh diagnostics, notebook, and Gradio demo.
+- **`projects/_portfolio_common/`** — Shared pipeline, feature, modeling, evaluation, and visualization utilities used by the generated projects 6-100.
 - **`docs/PROJECTS.md`** — Project idea catalog and supporting reference material.
 - **`pyproject.toml`** — Project metadata and Python dependencies (managed with **uv**).
 - **`uv.lock`** — Locked versions for reproducible installs.

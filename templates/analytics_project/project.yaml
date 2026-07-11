@@ -1,0 +1,20 @@
+id: {{ project_id }}
+slug: {{ slug }}
+title: "{{ title }}"
+summary: "{{ summary }}"
+tracks:
+  - data_science
+difficulty: intermediate
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: analytics_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.{{ slug }}.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/{{ slug }}"

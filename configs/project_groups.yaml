@@ -1,0 +1,16 @@
+featured_projects:
+  - sensor_drift_detection
+  - gravitational_orbit_simulator
+  - renewable_energy_mix_optimizer
+  - particle_diffusion_mc
+
+domain_groups:
+  physical_systems:
+    - gravitational_orbit_simulator
+    - particle_diffusion_mc
+  environmental_systems:
+    - urban_heat_island_analysis
+  energy_systems:
+    - renewable_energy_mix_optimizer
+  industrial_analytics:
+    - sensor_drift_detection

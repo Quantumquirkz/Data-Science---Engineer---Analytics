@@ -1,19 +1,5 @@
-from __future__ import annotations
+"""Compatibility re-export for shared project metadata."""
 
-from dataclasses import dataclass
+from data_intelligence_engineering.catalog.schemas import ProjectSpec
 
-
-@dataclass(frozen=True, slots=True)
-class ProjectSpec:
-    """Configuration that makes one portfolio project domain-specific."""
-
-    number: int
-    slug: str
-    title: str
-    description: str
-    theoretical_stack: str
-    domain: str
-    task_kind: str
-    target_name: str
-    public_data_note: str
-    random_seed: int
+__all__ = ["ProjectSpec"]

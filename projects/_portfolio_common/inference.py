@@ -1,13 +1,3 @@
-from __future__ import annotations
+"""Compatibility re-export for shared inference utilities."""
 
-from pathlib import Path
-
-import pandas as pd
-
-
-def load_validation_predictions(predictions_path: Path) -> pd.DataFrame:
-    return pd.read_csv(predictions_path)
-
-
-def load_metrics(metrics_path: Path) -> pd.DataFrame:
-    return pd.read_csv(metrics_path)
+from data_intelligence_engineering.modeling.inference import *  # noqa: F401,F403

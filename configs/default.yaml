@@ -1,0 +1,5 @@
+repository:
+  project_root: projects
+  shared_package: src/data_intelligence_engineering
+  default_sample_size: 720
+  default_random_seed: 1729

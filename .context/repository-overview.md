@@ -87,13 +87,19 @@ The repository currently contains:
 
 - `README.md` as the public entry point.
 - `pyproject.toml` and `uv.lock` for reproducible Python dependency management.
-- `docs/PROJECTS.md` as a catalog of 100 multidisciplinary project ideas.
-- `labs/` for course-oriented notebooks and datasets.
-- `projects/` for portfolio projects and reusable implementations.
+- `docs/PROJECTS.md` as the original catalog of 100 multidisciplinary project
+  ideas.
+- `docs/project_catalog.md` and `docs/catalog/` as generated metadata-backed
+  catalog views.
+- `curriculum/` for role-based teaching tracks and reusable modules.
+- `labs/` for course-oriented notebooks, workshops, exercises, and mini cases.
+- `projects/` for 100 portfolio projects with slug-based physical paths and
+  stable `p001`-`p100` metadata IDs.
 - `projects/_portfolio_common/` for shared utilities used by generated or
   standardized portfolio projects.
-- Individual project folders with a repeated shape: `README.md`, `app.py`,
-  `notebooks/`, `src/`, and `data/`.
+- `templates/` for role-specific project scaffolds.
+- Individual project folders with a repeated shape: `project.yaml`,
+  `README.md`, `app.py`, `notebooks/`, `src/`, and `data/`.
 
 ## Strategic Role Of `.context`
 

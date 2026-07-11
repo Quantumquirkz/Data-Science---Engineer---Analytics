@@ -3,3 +3,14 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 projects/*/data/processed/
+projects/*/models/
+projects/*/reports/figures/generated/
+projects/*/reports/tables/generated/
+data/external/
+data/interim/
+data/processed/
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.onnx
+reports/figures/generated/
+reports/tables/generated/

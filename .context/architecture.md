@@ -1,174 +1,95 @@
 # Architecture
 
-This repository follows a portfolio-lab architecture. The root contains shared
-configuration and documentation, while projects and labs are organized as
-independent learning and implementation units.
+This repository follows a teaching-first, metadata-backed portfolio-lab
+architecture. It is built to teach Data Analytics, Data Science, Data
+Engineering, ML Engineering, and Scientific Computing through 100 practical
+projects.
 
-## Repository Layout
+## System Shape
 
 ```mermaid
 flowchart TB
     root["Repository root"]
-    readme["README.md"]
-    pyproject["pyproject.toml"]
-    lock["uv.lock"]
-    docs["docs/"]
-    labs["labs/"]
-    projects["projects/"]
-    context[".context/"]
+    curriculum["curriculum/<br/>tracks and modules"]
+    projects["projects/<br/>100 project folders"]
+    registry["project.yaml + registry.yaml<br/>IDs and aliases"]
+    templates["templates/<br/>role-specific scaffolds"]
+    core["src/data_intelligence_engineering/<br/>shared infrastructure"]
+    lifecycle["data models reports notebooks<br/>artifact lifecycle"]
+    docs["docs/<br/>catalogs and guides"]
 
-    root --> readme
-    root --> pyproject
-    root --> lock
-    root --> docs
-    root --> labs
+    root --> curriculum
     root --> projects
-    root --> context
-
-    docs --> projectCatalog["PROJECTS.md<br/>100-project catalog"]
-    labs --> labNotebooks["Course notebooks<br/>CSV datasets"]
-    projects --> common["_portfolio_common/<br/>shared utilities"]
-    projects --> projectTemplate["project_name/<br/>README, app, src, notebooks, data"]
+    root --> templates
+    root --> core
+    root --> lifecycle
+    root --> docs
+    projects --> registry
+    curriculum --> registry
+    core --> registry
+    registry --> docs
 ```
 
-## Root-Level Responsibilities
+## Canonical Project Identity
 
-- `README.md`: public-facing repository introduction, setup instructions, and
-  high-level layout.
-- `pyproject.toml`: Python project metadata and dependency declarations.
-- `uv.lock`: locked dependency graph for reproducibility.
-- `LICENSE`: MIT license.
-- `docs/PROJECTS.md`: structured catalog of 100 project ideas and theoretical
-  stacks.
-- `.context/`: durable repository context for humans and AI systems.
+- Physical project paths remain slug-based, for example
+  `projects/sensor_drift_detection/`.
+- Stable IDs `p001`-`p100` live in project metadata.
+- `projects/registry.yaml` is the repository-wide index.
+- Tooling resolves both IDs and slugs through the central registry.
+- Symlink aliases and duplicated project folders are avoided.
 
-## Project-Level Template
+## Teaching Layer
 
-Most portfolio projects follow this structure:
+`curriculum/` is the learning map. It organizes role-based tracks and reusable
+modules, but it does not duplicate project code. Track READMEs point learners to
+project READMEs and notebooks.
 
-```text
-projects/<project_name>/
-  README.md
-  app.py
-  data/
-    README.md
-  notebooks/
-    <project_name>.ipynb
-  src/
-    __init__.py
-    config.py
-    data.py
-    preprocessing.py
-    features.py
-    modeling.py
-    evaluation.py
-    visualization.py
-    inference.py
-    pipeline.py
-```
+Tracks:
 
-Some projects may include domain-specific modules. For example,
-`sensor_drift_detection` contains `drift_detection.py`, because drift detection
-is a core domain concept rather than a generic modeling step.
+- `data_analytics`
+- `data_science`
+- `data_engineering`
+- `ml_engineering`
+- `scientific_computing`
 
-## Standard Project Execution Flow
+## Project Template Families
 
-```mermaid
-flowchart LR
-    data["data.py<br/>load or simulate data"]
-    prep["preprocessing.py<br/>clean and validate"]
-    feat["features.py<br/>derive signals"]
-    model["modeling.py<br/>fit algorithms"]
-    eval["evaluation.py<br/>metrics and diagnostics"]
-    viz["visualization.py<br/>plots and summaries"]
-    infer["inference.py<br/>prediction interface"]
-    pipe["pipeline.py<br/>orchestration"]
-    app["app.py<br/>Gradio or UI demo"]
-    nb["notebooks/<br/>narrative walkthrough"]
+The repository uses multiple project shapes because analytics dashboards, data
+pipelines, ML services, and scientific simulations have different natural
+artifacts.
 
-    data --> prep --> feat --> model --> eval --> viz
-    infer --> app
-    pipe --> data
-    pipe --> prep
-    pipe --> feat
-    pipe --> model
-    pipe --> eval
-    pipe --> viz
-    nb --> pipe
-    app --> pipe
-```
+- `analytics_project`
+- `data_science_project`
+- `data_engineering_project`
+- `ml_engineering_project`
+- `scientific_computing_project`
+- `capstone_project`
 
-The pipeline module should be the primary composition layer. Notebooks and apps
-should call pipeline functions instead of duplicating business logic.
+## Shared Core Boundary
 
-## Shared Utility Layer
+`src/data_intelligence_engineering/` contains reusable infrastructure:
 
-`projects/_portfolio_common/` contains reusable modules for standardized
-portfolio projects:
+- catalog and registry loading;
+- project metadata validation;
+- shared path/config helpers;
+- lightweight pipeline contracts;
+- reusable data, modeling, evaluation, visualization, and app helpers.
 
-- `data.py`
-- `preprocessing.py`
-- `features.py`
-- `modeling.py`
-- `evaluation.py`
-- `visualization.py`
-- `inference.py`
-- `pipeline.py`
-- `spec.py`
+Domain-specific logic remains inside each project.
 
-This shared layer reduces duplication across generated or template-aligned
-projects. It should remain generic enough to support multiple domains, while
-domain-specific assumptions should stay inside each project folder.
+## Artifact Lifecycle
 
-## Dependency Model
+Project-local `data/`, `notebooks/`, and reports remain valid for
+self-contained execution. Top-level `data/`, `models/`, `reports/`,
+`notebooks/`, and `references/` define shared repository standards and prepare
+the repository for optional DVC adoption later.
 
-Dependencies are managed with `uv` through `pyproject.toml` and `uv.lock`.
+## Operating Assumptions
 
-Major dependency families include:
-
-- Numerical computing: NumPy, SciPy, pandas, Polars, PyArrow.
-- Machine learning: scikit-learn, XGBoost, LightGBM, SHAP, Optuna.
-- Deep learning and NLP tooling: PyTorch, TensorFlow, transformers, datasets.
-- Statistics and modeling: statsmodels.
-- Visualization: matplotlib, seaborn, plotly.
-- Interfaces and notebooks: Jupyter, JupyterLab, ipykernel, Gradio.
-- Reporting and graph helpers: rich, tabulate, prettytable, pydot, graphviz.
-
-```mermaid
-flowchart TB
-    uv["uv sync"]
-    lock["uv.lock"]
-    env["local virtual environment"]
-    notebooks["Jupyter notebooks"]
-    apps["Gradio apps"]
-    scripts["Python modules and scripts"]
-
-    lock --> uv
-    uv --> env
-    env --> notebooks
-    env --> apps
-    env --> scripts
-```
-
-## Architectural Assumptions
-
-- The repository is primarily a learning and portfolio environment, not a
-  single deployable production service.
-- Projects should be independently understandable and runnable from the
-  repository root.
-- Public datasets, simulated datasets, or small local samples are preferred over
-  large committed artifacts.
-- Reproducibility matters more than ad hoc experimentation.
-- Shared abstractions are valuable only when they reduce repeated structure
-  across multiple projects.
-
-## Known Structural Risks
-
-- Many projects can make dependency management heavy; `uv.lock` should remain
-  the source of truth for environment reproduction.
-- Notebook-only logic can become difficult to test or reuse; project logic
-  should live in `src/` modules.
-- Generated project templates can drift from hand-built projects unless
-  conventions are documented and periodically reviewed.
-- Large data files should be avoided unless there is a clear reason and storage
-  strategy.
+- The repository is a public teaching and portfolio lab, not one monolithic
+  production application.
+- README files and notebooks are the main teaching surface.
+- `uv`, `pyproject.toml`, and `uv.lock` define reproducible execution.
+- Metadata-driven discovery is preferred over hard-coded flat filesystem
+  assumptions.

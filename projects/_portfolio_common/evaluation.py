@@ -1,8 +1,3 @@
-from __future__ import annotations
+"""Compatibility re-export for shared evaluation utilities."""
 
-import pandas as pd
-
-
-def summarize_metrics(metrics: pd.DataFrame) -> str:
-    best = metrics.sort_values("value", ascending=False).head(1).iloc[0]
-    return f"{best['model']} / {best['metric']}: {best['value']:.3f}"
+from data_intelligence_engineering.modeling.evaluation import *  # noqa: F401,F403

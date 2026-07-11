@@ -1,0 +1,43 @@
+{
+  "repository": {
+    "github_name": "Quantumquirkz/data-intelligence-engineering",
+    "url": "https://github.com/Quantumquirkz/data-intelligence-engineering",
+    "purpose": "A practical repository for Data Science, Data Engineering, Data Analytics, and ML Engineering projects, workflow, tools, experiments, and end-to-end solutions built for learning and real-world impact.",
+    "author": "Jhuomar Boskoll Quintero",
+    "license": "MIT",
+    "primary_language": "Python",
+    "python_version": ">=3.12",
+    "package_manager": "uv"
+  },
+  "context": {
+    "language": "English",
+    "created_for": "Human and AI orientation before repository modifications",
+    "documents": [
+      ".context/README.md",
+      ".context/repository-overview.md",
+      ".context/architecture.md",
+      ".context/project-taxonomy.md",
+      ".context/engineering-conventions.md",
+      ".context/agent-operating-system.md"
+    ]
+  },
+  "top_level_structure": {
+    "docs": "Project catalog and supporting reference material",
+    "labs": "Course-oriented notebooks and datasets",
+    "projects": "Portfolio projects and shared implementation utilities",
+    "projects/_portfolio_common": "Reusable utilities for standardized portfolio projects",
+    ".context": "Structured repository context",
+    ".agents": "Local agents, rules, and skills for AI-assisted repository work",
+    "AGENTS.md": "Root operating guide and skill router for AI agents"
+  },
+  "core_themes": [
+    "data science",
+    "data engineering",
+    "data analytics",
+    "machine learning engineering",
+    "scientific computing",
+    "portfolio projects",
+    "reproducible workflows",
+    "interactive demos"
+  ]
+}

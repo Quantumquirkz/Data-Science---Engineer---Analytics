@@ -1,0 +1,25 @@
+id: p048
+slug: multi_agent_evacuation_simulation
+title: "Multi-Agent Evacuation Simulation"
+summary: "Applied learning project for Multi-Agent Evacuation Simulation with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.multi_agent_evacuation_simulation.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/multi_agent_evacuation_simulation"

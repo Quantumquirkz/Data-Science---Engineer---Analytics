@@ -1,0 +1,25 @@
+id: p021
+slug: epidemiological_spread_simulation
+title: "Epidemiological Spread Simulation"
+summary: "Applied learning project for Epidemiological Spread Simulation with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.epidemiological_spread_simulation.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/epidemiological_spread_simulation"

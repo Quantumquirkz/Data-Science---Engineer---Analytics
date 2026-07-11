@@ -1,0 +1,27 @@
+id: p049
+slug: network_traffic_anomaly_detection
+title: "Network Traffic Anomaly Detection"
+summary: "Applied learning project for Network Traffic Anomaly Detection with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - anomaly_detection
+  - graph_analytics
+  - data_modeling
+  - pipeline_design
+  - scalable_data_patterns
+template: data_engineering_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - data_contract
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.network_traffic_anomaly_detection.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/network_traffic_anomaly_detection"

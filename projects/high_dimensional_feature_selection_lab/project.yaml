@@ -1,0 +1,21 @@
+id: p031
+slug: high_dimensional_feature_selection_lab
+title: "High-Dimensional Feature Selection Lab"
+summary: "Applied learning project for High-Dimensional Feature Selection Lab with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: intermediate
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.high_dimensional_feature_selection_lab.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/high_dimensional_feature_selection_lab"

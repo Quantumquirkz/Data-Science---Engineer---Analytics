@@ -1,0 +1,22 @@
+id: p073
+slug: reservoir_pressure_forecasting
+title: "Reservoir Pressure Forecasting"
+summary: "Applied learning project for Reservoir Pressure Forecasting with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.reservoir_pressure_forecasting.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/reservoir_pressure_forecasting"

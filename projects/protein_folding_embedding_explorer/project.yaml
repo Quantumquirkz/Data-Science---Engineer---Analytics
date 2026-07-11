@@ -1,0 +1,22 @@
+id: p063
+slug: protein_folding_embedding_explorer
+title: "Protein Folding Embedding Explorer"
+summary: "Applied learning project for Protein Folding Embedding Explorer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.protein_folding_embedding_explorer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/protein_folding_embedding_explorer"

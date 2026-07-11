@@ -1,0 +1,22 @@
+id: p096
+slug: urban_heat_island_analysis
+title: "Urban Heat Island Analysis"
+summary: "Applied learning project for Urban Heat Island Analysis with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.urban_heat_island_analysis.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/urban_heat_island_analysis"

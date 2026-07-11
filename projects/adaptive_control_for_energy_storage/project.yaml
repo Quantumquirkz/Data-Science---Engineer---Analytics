@@ -1,0 +1,23 @@
+id: p001
+slug: adaptive_control_for_energy_storage
+title: "Adaptive Control for Energy Storage"
+summary: "Applied learning project for Adaptive Control for Energy Storage with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - optimization
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.adaptive_control_for_energy_storage.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/adaptive_control_for_energy_storage"

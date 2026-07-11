@@ -1,0 +1,23 @@
+id: p023
+slug: experimental_reproducibility_analytics
+title: "Experimental Reproducibility Analytics"
+summary: "Applied learning project for Experimental Reproducibility Analytics with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+difficulty: beginner
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - exploratory_analysis
+  - reporting
+template: analytics_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.experimental_reproducibility_analytics.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/experimental_reproducibility_analytics"

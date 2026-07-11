@@ -1,0 +1,25 @@
+id: p091
+slug: sports_tournament_simulation_engine
+title: "Sports Tournament Simulation Engine"
+summary: "Applied learning project for Sports Tournament Simulation Engine with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.sports_tournament_simulation_engine.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/sports_tournament_simulation_engine"

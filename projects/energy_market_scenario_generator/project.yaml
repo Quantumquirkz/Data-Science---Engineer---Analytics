@@ -1,0 +1,24 @@
+id: p019
+slug: energy_market_scenario_generator
+title: "Energy Market Scenario Generator"
+summary: "Applied learning project for Energy Market Scenario Generator with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - scientific_computing
+difficulty: beginner
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - exploratory_analysis
+  - reporting
+template: analytics_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.energy_market_scenario_generator.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/energy_market_scenario_generator"

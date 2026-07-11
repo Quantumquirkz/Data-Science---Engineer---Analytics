@@ -1,0 +1,22 @@
+id: p084
+slug: smart_building_thermal_dynamics_model
+title: "Smart Building Thermal Dynamics Model"
+summary: "Applied learning project for Smart Building Thermal Dynamics Model with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.smart_building_thermal_dynamics_model.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/smart_building_thermal_dynamics_model"

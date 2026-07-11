@@ -1,0 +1,25 @@
+id: p057
+slug: particle_diffusion_mc
+title: "Particle Diffusion Monte Carlo Simulator"
+summary: "Applied learning project for Particle Diffusion Monte Carlo Simulator with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.particle_diffusion_mc.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/particle_diffusion_mc"

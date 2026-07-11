@@ -1,0 +1,25 @@
+id: p075
+slug: satellite_orbit_perturbation_analysis
+title: "Satellite Orbit Perturbation Analysis"
+summary: "Applied learning project for Satellite Orbit Perturbation Analysis with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.satellite_orbit_perturbation_analysis.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/satellite_orbit_perturbation_analysis"

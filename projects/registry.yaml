@@ -1,0 +1,604 @@
+# Canonical 100-project registry.
+# IDs and slugs are both supported aliases.
+
+projects:
+  - id: p001
+    slug: adaptive_control_for_energy_storage
+    path: projects/adaptive_control_for_energy_storage
+    title: "Adaptive Control for Energy Storage"
+    template: data_science_project
+    maturity: active
+  - id: p002
+    slug: air_quality_hotspot_prediction
+    path: projects/air_quality_hotspot_prediction
+    title: "Air Quality Hotspot Prediction"
+    template: data_science_project
+    maturity: active
+  - id: p003
+    slug: airplane_turbulence_pattern_mining
+    path: projects/airplane_turbulence_pattern_mining
+    title: "Airplane Turbulence Pattern Mining"
+    template: data_science_project
+    maturity: active
+  - id: p004
+    slug: astronomical_light_curve_classifier
+    path: projects/astronomical_light_curve_classifier
+    title: "Astronomical Light Curve Classifier"
+    template: data_science_project
+    maturity: active
+  - id: p005
+    slug: atmospheric_pressure_anomaly_mapper
+    path: projects/atmospheric_pressure_anomaly_mapper
+    title: "Atmospheric Pressure Anomaly Mapper"
+    template: data_science_project
+    maturity: active
+  - id: p006
+    slug: autonomous_vehicle_sensor_fusion_project
+    path: projects/autonomous_vehicle_sensor_fusion_project
+    title: "Autonomous Vehicle Sensor Fusion Project"
+    template: data_science_project
+    maturity: active
+  - id: p007
+    slug: battery_degradation_modeling
+    path: projects/battery_degradation_modeling
+    title: "Battery Degradation Modeling"
+    template: data_science_project
+    maturity: active
+  - id: p008
+    slug: blood_flow_proxy_prediction
+    path: projects/blood_flow_proxy_prediction
+    title: "Blood Flow Proxy Prediction"
+    template: data_science_project
+    maturity: active
+  - id: p009
+    slug: climate_trend_attribution_project
+    path: projects/climate_trend_attribution_project
+    title: "Climate Trend Attribution Project"
+    template: data_science_project
+    maturity: active
+  - id: p010
+    slug: computational_topology_for_data_shapes
+    path: projects/computational_topology_for_data_shapes
+    title: "Computational Topology for Data Shapes"
+    template: scientific_computing_project
+    maturity: active
+  - id: p011
+    slug: cosmic_ray_event_pattern_mining
+    path: projects/cosmic_ray_event_pattern_mining
+    title: "Cosmic Ray Event Pattern Mining"
+    template: scientific_computing_project
+    maturity: active
+  - id: p012
+    slug: crop_yield_physics_and_data_model
+    path: projects/crop_yield_physics_and_data_model
+    title: "Crop Yield Physics-and-Data Model"
+    template: scientific_computing_project
+    maturity: active
+  - id: p013
+    slug: data_assimilation_for_environmental_systems
+    path: projects/data_assimilation_for_environmental_systems
+    title: "Data Assimilation for Environmental Systems"
+    template: capstone_project
+    maturity: active
+  - id: p014
+    slug: demand_forecasting_for_cold_chain_logistics
+    path: projects/demand_forecasting_for_cold_chain_logistics
+    title: "Demand Forecasting for Cold Chain Logistics"
+    template: data_science_project
+    maturity: active
+  - id: p015
+    slug: drone_flight_stability_predictor
+    path: projects/drone_flight_stability_predictor
+    title: "Drone Flight Stability Predictor"
+    template: data_science_project
+    maturity: active
+  - id: p016
+    slug: dynamic_pricing_under_uncertainty
+    path: projects/dynamic_pricing_under_uncertainty
+    title: "Dynamic Pricing Under Uncertainty"
+    template: analytics_project
+    maturity: active
+  - id: p017
+    slug: electromagnetic_interference_pattern_detector
+    path: projects/electromagnetic_interference_pattern_detector
+    title: "Electromagnetic Interference Pattern Detector"
+    template: data_science_project
+    maturity: active
+  - id: p018
+    slug: energy_consumption_segmentation
+    path: projects/energy_consumption_segmentation
+    title: "Energy Consumption Segmentation"
+    template: analytics_project
+    maturity: active
+  - id: p019
+    slug: energy_market_scenario_generator
+    path: projects/energy_market_scenario_generator
+    title: "Energy Market Scenario Generator"
+    template: analytics_project
+    maturity: active
+  - id: p020
+    slug: environmental_sensor_network_placement_optimizer
+    path: projects/environmental_sensor_network_placement_optimizer
+    title: "Environmental Sensor Network Placement Optimizer"
+    template: capstone_project
+    maturity: active
+  - id: p021
+    slug: epidemiological_spread_simulation
+    path: projects/epidemiological_spread_simulation
+    title: "Epidemiological Spread Simulation"
+    template: scientific_computing_project
+    maturity: active
+  - id: p022
+    slug: experimental_physics_outlier_lab
+    path: projects/experimental_physics_outlier_lab
+    title: "Experimental Physics Outlier Lab"
+    template: scientific_computing_project
+    maturity: active
+  - id: p023
+    slug: experimental_reproducibility_analytics
+    path: projects/experimental_reproducibility_analytics
+    title: "Experimental Reproducibility Analytics"
+    template: analytics_project
+    maturity: active
+  - id: p024
+    slug: financial_contagion_network_model
+    path: projects/financial_contagion_network_model
+    title: "Financial Contagion Network Model"
+    template: data_science_project
+    maturity: active
+  - id: p025
+    slug: financial_regime_change_detector
+    path: projects/financial_regime_change_detector
+    title: "Financial Regime Change Detector"
+    template: data_science_project
+    maturity: active
+  - id: p026
+    slug: financial_volatility_surface_predictor
+    path: projects/financial_volatility_surface_predictor
+    title: "Financial Volatility Surface Predictor"
+    template: data_science_project
+    maturity: active
+  - id: p027
+    slug: fluid_flow_surrogate_model
+    path: projects/fluid_flow_surrogate_model
+    title: "Fluid Flow Surrogate Model"
+    template: scientific_computing_project
+    maturity: active
+  - id: p028
+    slug: fraud_detection_in_scientific_grant_data
+    path: projects/fraud_detection_in_scientific_grant_data
+    title: "Fraud Detection in Scientific Grant Data"
+    template: data_science_project
+    maturity: active
+  - id: p029
+    slug: gravitational_orbit_simulator
+    path: projects/gravitational_orbit_simulator
+    title: "Gravitational Orbit Simulator"
+    template: scientific_computing_project
+    maturity: featured
+  - id: p030
+    slug: gravitational_wave_signal_search
+    path: projects/gravitational_wave_signal_search
+    title: "Gravitational Wave Signal Search"
+    template: scientific_computing_project
+    maturity: active
+  - id: p031
+    slug: high_dimensional_feature_selection_lab
+    path: projects/high_dimensional_feature_selection_lab
+    title: "High-Dimensional Feature Selection Lab"
+    template: data_science_project
+    maturity: active
+  - id: p032
+    slug: high_frequency_trading_microstructure_analyzer
+    path: projects/high_frequency_trading_microstructure_analyzer
+    title: "High-Frequency Trading Microstructure Analyzer"
+    template: data_science_project
+    maturity: active
+  - id: p033
+    slug: hospital_queue_dynamics_analyzer
+    path: projects/hospital_queue_dynamics_analyzer
+    title: "Hospital Queue Dynamics Analyzer"
+    template: data_science_project
+    maturity: active
+  - id: p034
+    slug: human_activity_recognition_from_wearables
+    path: projects/human_activity_recognition_from_wearables
+    title: "Human Activity Recognition from Wearables"
+    template: ml_engineering_project
+    maturity: active
+  - id: p035
+    slug: human_gait_stability_analysis
+    path: projects/human_gait_stability_analysis
+    title: "Human Gait Stability Analysis"
+    template: data_science_project
+    maturity: active
+  - id: p036
+    slug: human_mobility_pattern_clustering
+    path: projects/human_mobility_pattern_clustering
+    title: "Human Mobility Pattern Clustering"
+    template: data_science_project
+    maturity: active
+  - id: p037
+    slug: hydrological_flood_risk_forecasting
+    path: projects/hydrological_flood_risk_forecasting
+    title: "Hydrological Flood Risk Forecasting"
+    template: data_science_project
+    maturity: active
+  - id: p038
+    slug: industrial_sound_event_detector
+    path: projects/industrial_sound_event_detector
+    title: "Industrial Sound Event Detector"
+    template: data_science_project
+    maturity: active
+  - id: p039
+    slug: large_scale_astronomy_catalog_linker
+    path: projects/large_scale_astronomy_catalog_linker
+    title: "Large-Scale Astronomy Catalog Linker"
+    template: data_engineering_project
+    maturity: active
+  - id: p040
+    slug: large_scale_log_compression_and_analytics
+    path: projects/large_scale_log_compression_and_analytics
+    title: "Large-Scale Log Compression and Analytics"
+    template: data_engineering_project
+    maturity: featured
+  - id: p041
+    slug: large_scale_recommendation_for_learning_paths
+    path: projects/large_scale_recommendation_for_learning_paths
+    title: "Large-Scale Recommendation for Learning Paths"
+    template: ml_engineering_project
+    maturity: active
+  - id: p042
+    slug: large_scale_sensor_missing_data_imputation
+    path: projects/large_scale_sensor_missing_data_imputation
+    title: "Large-Scale Sensor Missing Data Imputation"
+    template: data_science_project
+    maturity: active
+  - id: p043
+    slug: large_scale_text_mining_of_scientific_literature
+    path: projects/large_scale_text_mining_of_scientific_literature
+    title: "Large-Scale Text Mining of Scientific Literature"
+    template: data_engineering_project
+    maturity: active
+  - id: p044
+    slug: magnetic_field_sensor_reconstruction
+    path: projects/magnetic_field_sensor_reconstruction
+    title: "Magnetic Field Sensor Reconstruction"
+    template: data_science_project
+    maturity: active
+  - id: p045
+    slug: manufacturing_defect_physics_informed_classifier
+    path: projects/manufacturing_defect_physics_informed_classifier
+    title: "Manufacturing Defect Physics-Informed Classifier"
+    template: scientific_computing_project
+    maturity: active
+  - id: p046
+    slug: material_fatigue_prediction
+    path: projects/material_fatigue_prediction
+    title: "Material Fatigue Prediction"
+    template: data_science_project
+    maturity: active
+  - id: p047
+    slug: mechanical_resonance_identification
+    path: projects/mechanical_resonance_identification
+    title: "Mechanical Resonance Identification"
+    template: scientific_computing_project
+    maturity: active
+  - id: p048
+    slug: multi_agent_evacuation_simulation
+    path: projects/multi_agent_evacuation_simulation
+    title: "Multi-Agent Evacuation Simulation"
+    template: scientific_computing_project
+    maturity: active
+  - id: p049
+    slug: network_traffic_anomaly_detection
+    path: projects/network_traffic_anomaly_detection
+    title: "Network Traffic Anomaly Detection"
+    template: data_engineering_project
+    maturity: featured
+  - id: p050
+    slug: neuron_spike_train_modeling
+    path: projects/neuron_spike_train_modeling
+    title: "Neuron Spike Train Modeling"
+    template: data_science_project
+    maturity: active
+  - id: p051
+    slug: neutrino_detector_event_clustering
+    path: projects/neutrino_detector_event_clustering
+    title: "Neutrino Detector Event Clustering"
+    template: scientific_computing_project
+    maturity: active
+  - id: p052
+    slug: ocean_buoy_wave_energy_estimator
+    path: projects/ocean_buoy_wave_energy_estimator
+    title: "Ocean Buoy Wave Energy Estimator"
+    template: scientific_computing_project
+    maturity: active
+  - id: p053
+    slug: ocean_current_field_compression
+    path: projects/ocean_current_field_compression
+    title: "Ocean Current Field Compression"
+    template: data_science_project
+    maturity: active
+  - id: p054
+    slug: online_experiment_bayesian_analyzer
+    path: projects/online_experiment_bayesian_analyzer
+    title: "Online Experiment Bayesian Analyzer"
+    template: analytics_project
+    maturity: active
+  - id: p055
+    slug: optical_experiment_noise_characterization
+    path: projects/optical_experiment_noise_characterization
+    title: "Optical Experiment Noise Characterization"
+    template: scientific_computing_project
+    maturity: active
+  - id: p056
+    slug: particle_collision_feature_extraction_pipeline
+    path: projects/particle_collision_feature_extraction_pipeline
+    title: "Particle Collision Feature Extraction Pipeline"
+    template: scientific_computing_project
+    maturity: active
+  - id: p057
+    slug: particle_diffusion_mc
+    path: projects/particle_diffusion_mc
+    title: "Particle Diffusion Monte Carlo Simulator"
+    template: scientific_computing_project
+    maturity: featured
+  - id: p058
+    slug: pde_based_image_denoising_study
+    path: projects/pde_based_image_denoising_study
+    title: "PDE-Based Image Denoising Study"
+    template: scientific_computing_project
+    maturity: active
+  - id: p059
+    slug: physics_informed_weather_nowcasting
+    path: projects/physics_informed_weather_nowcasting
+    title: "Physics-Informed Weather Nowcasting"
+    template: scientific_computing_project
+    maturity: active
+  - id: p060
+    slug: plasma_experiment_parameter_inference
+    path: projects/plasma_experiment_parameter_inference
+    title: "Plasma Experiment Parameter Inference"
+    template: scientific_computing_project
+    maturity: active
+  - id: p061
+    slug: portfolio_risk_stress_testing_engine
+    path: projects/portfolio_risk_stress_testing_engine
+    title: "Portfolio Risk Stress Testing Engine"
+    template: analytics_project
+    maturity: featured
+  - id: p062
+    slug: power_grid_load_forecasting
+    path: projects/power_grid_load_forecasting
+    title: "Power grid load forecasting"
+    template: data_science_project
+    maturity: active
+  - id: p063
+    slug: protein_folding_embedding_explorer
+    path: projects/protein_folding_embedding_explorer
+    title: "Protein Folding Embedding Explorer"
+    template: data_science_project
+    maturity: active
+  - id: p064
+    slug: quantum_experiment_result_dashboard
+    path: projects/quantum_experiment_result_dashboard
+    title: "Quantum Experiment Result Dashboard"
+    template: analytics_project
+    maturity: active
+  - id: p065
+    slug: radiative_cooling_efficiency_predictor
+    path: projects/radiative_cooling_efficiency_predictor
+    title: "Radiative Cooling Efficiency Predictor"
+    template: data_science_project
+    maturity: active
+  - id: p066
+    slug: rare_disease_signal_mining
+    path: projects/rare_disease_signal_mining
+    title: "Rare Disease Signal Mining"
+    template: data_science_project
+    maturity: active
+  - id: p067
+    slug: real_time_manufacturing_yield_dashboard
+    path: projects/real_time_manufacturing_yield_dashboard
+    title: "Real-Time Manufacturing Yield Dashboard"
+    template: ml_engineering_project
+    maturity: featured
+  - id: p068
+    slug: recommender_system_for_scientific_papers
+    path: projects/recommender_system_for_scientific_papers
+    title: "Recommender System for Scientific Papers"
+    template: ml_engineering_project
+    maturity: active
+  - id: p069
+    slug: reentry_trajectory_predictor
+    path: projects/reentry_trajectory_predictor
+    title: "Reentry Trajectory Predictor"
+    template: scientific_computing_project
+    maturity: active
+  - id: p070
+    slug: reinforcement_learning_for_adaptive_traffic_lights
+    path: projects/reinforcement_learning_for_adaptive_traffic_lights
+    title: "Reinforcement Learning for Adaptive Traffic Lights"
+    template: data_science_project
+    maturity: active
+  - id: p071
+    slug: renewable_energy_mix_optimizer
+    path: projects/renewable_energy_mix_optimizer
+    title: "Renewable Energy Mix Optimizer"
+    template: capstone_project
+    maturity: featured
+  - id: p072
+    slug: research_trend_forecasting_engine
+    path: projects/research_trend_forecasting_engine
+    title: "Research Trend Forecasting Engine"
+    template: data_science_project
+    maturity: active
+  - id: p073
+    slug: reservoir_pressure_forecasting
+    path: projects/reservoir_pressure_forecasting
+    title: "Reservoir Pressure Forecasting"
+    template: data_science_project
+    maturity: active
+  - id: p074
+    slug: satellite_image_change_detection
+    path: projects/satellite_image_change_detection
+    title: "Satellite Image Change Detection"
+    template: data_science_project
+    maturity: featured
+  - id: p075
+    slug: satellite_orbit_perturbation_analysis
+    path: projects/satellite_orbit_perturbation_analysis
+    title: "Satellite Orbit Perturbation Analysis"
+    template: scientific_computing_project
+    maturity: active
+  - id: p076
+    slug: scientific_data_platform_for_multi_modal_experiments
+    path: projects/scientific_data_platform_for_multi_modal_experiments
+    title: "Scientific Data Platform for Multi-Modal Experiments"
+    template: data_engineering_project
+    maturity: featured
+  - id: p077
+    slug: scientific_experiment_metadata_knowledge_graph
+    path: projects/scientific_experiment_metadata_knowledge_graph
+    title: "Scientific Experiment Metadata Knowledge Graph"
+    template: data_engineering_project
+    maturity: active
+  - id: p078
+    slug: scientific_image_segmentation_benchmark
+    path: projects/scientific_image_segmentation_benchmark
+    title: "Scientific Image Segmentation Benchmark"
+    template: ml_engineering_project
+    maturity: active
+  - id: p079
+    slug: seafloor_mapping_interpolation_project
+    path: projects/seafloor_mapping_interpolation_project
+    title: "Seafloor Mapping Interpolation Project"
+    template: data_science_project
+    maturity: active
+  - id: p080
+    slug: seismic_signal_classification
+    path: projects/seismic_signal_classification
+    title: "Earthquake Signal Classification"
+    template: data_science_project
+    maturity: active
+  - id: p081
+    slug: semiconductor_process_variation_analyzer
+    path: projects/semiconductor_process_variation_analyzer
+    title: "Semiconductor Process Variation Analyzer"
+    template: data_science_project
+    maturity: candidate
+  - id: p082
+    slug: sensor_drift_detection
+    path: projects/sensor_drift_detection
+    title: "Sensor Drift Detection in Industrial Systems"
+    template: ml_engineering_project
+    maturity: featured
+  - id: p083
+    slug: shockwave_event_detection_in_sensor_arrays
+    path: projects/shockwave_event_detection_in_sensor_arrays
+    title: "Shockwave Event Detection in Sensor Arrays"
+    template: scientific_computing_project
+    maturity: candidate
+  - id: p084
+    slug: smart_building_thermal_dynamics_model
+    path: projects/smart_building_thermal_dynamics_model
+    title: "Smart Building Thermal Dynamics Model"
+    template: data_science_project
+    maturity: candidate
+  - id: p085
+    slug: smart_city_noise_map_generator
+    path: projects/smart_city_noise_map_generator
+    title: "Smart City Noise Map Generator"
+    template: capstone_project
+    maturity: candidate
+  - id: p086
+    slug: smart_farming_irrigation_optimizer
+    path: projects/smart_farming_irrigation_optimizer
+    title: "Smart Farming Irrigation Optimizer"
+    template: capstone_project
+    maturity: candidate
+  - id: p087
+    slug: smart_grid_fault_localization
+    path: projects/smart_grid_fault_localization
+    title: "Smart Grid Fault Localization"
+    template: ml_engineering_project
+    maturity: candidate
+  - id: p088
+    slug: solar_irradiance_forecasting
+    path: projects/solar_irradiance_forecasting
+    title: "Solar Irradiance Forecasting"
+    template: data_science_project
+    maturity: candidate
+  - id: p089
+    slug: spectroscopy_peak_detection_engine
+    path: projects/spectroscopy_peak_detection_engine
+    title: "Spectroscopy Peak Detection Engine"
+    template: scientific_computing_project
+    maturity: candidate
+  - id: p090
+    slug: sports_biomechanics_motion_analyzer
+    path: projects/sports_biomechanics_motion_analyzer
+    title: "Sports Biomechanics Motion Analyzer"
+    template: data_science_project
+    maturity: candidate
+  - id: p091
+    slug: sports_tournament_simulation_engine
+    path: projects/sports_tournament_simulation_engine
+    title: "Sports Tournament Simulation Engine"
+    template: scientific_computing_project
+    maturity: candidate
+  - id: p092
+    slug: structural_health_monitoring_platform
+    path: projects/structural_health_monitoring_platform
+    title: "Structural Health Monitoring Platform"
+    template: data_engineering_project
+    maturity: candidate
+  - id: p093
+    slug: supply_chain_as_a_dynamic_network
+    path: projects/supply_chain_as_a_dynamic_network
+    title: "Supply Chain as a Dynamic Network"
+    template: capstone_project
+    maturity: candidate
+  - id: p094
+    slug: thermal_camera_defect_detection
+    path: projects/thermal_camera_defect_detection
+    title: "Thermal Camera Defect Detection"
+    template: data_science_project
+    maturity: candidate
+  - id: p095
+    slug: traffic_flow_as_a_physical_system
+    path: projects/traffic_flow_as_a_physical_system
+    title: "Traffic Flow as a Physical System"
+    template: capstone_project
+    maturity: candidate
+  - id: p096
+    slug: urban_heat_island_analysis
+    path: projects/urban_heat_island_analysis
+    title: "Urban Heat Island Analysis"
+    template: data_science_project
+    maturity: candidate
+  - id: p097
+    slug: warehouse_robotics_path_optimization
+    path: projects/warehouse_robotics_path_optimization
+    title: "Warehouse Robotics Path Optimization"
+    template: capstone_project
+    maturity: candidate
+  - id: p098
+    slug: weather_front_boundary_detection
+    path: projects/weather_front_boundary_detection
+    title: "Weather Front Boundary Detection"
+    template: data_science_project
+    maturity: candidate
+  - id: p099
+    slug: wildfire_spread_prediction
+    path: projects/wildfire_spread_prediction
+    title: "Wildfire Spread Prediction"
+    template: data_science_project
+    maturity: candidate
+  - id: p100
+    slug: wind_turbine_failure_early_warning_system
+    path: projects/wind_turbine_failure_early_warning_system
+    title: "Wind Turbine Failure Early Warning System"
+    template: ml_engineering_project
+    maturity: candidate

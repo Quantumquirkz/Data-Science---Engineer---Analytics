@@ -1,0 +1,23 @@
+id: p002
+slug: air_quality_hotspot_prediction
+title: "Air Quality Hotspot Prediction"
+summary: "Applied learning project for Air Quality Hotspot Prediction with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.air_quality_hotspot_prediction.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/air_quality_hotspot_prediction"

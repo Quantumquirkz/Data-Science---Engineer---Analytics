@@ -1,0 +1,23 @@
+id: p062
+slug: power_grid_load_forecasting
+title: "Power grid load forecasting"
+summary: "Applied learning project for Power grid load forecasting with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.power_grid_load_forecasting.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/power_grid_load_forecasting"

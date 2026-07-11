@@ -1,0 +1,21 @@
+id: p003
+slug: airplane_turbulence_pattern_mining
+title: "Airplane Turbulence Pattern Mining"
+summary: "Applied learning project for Airplane Turbulence Pattern Mining with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: beginner
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.airplane_turbulence_pattern_mining.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/airplane_turbulence_pattern_mining"

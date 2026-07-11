@@ -1,0 +1,25 @@
+id: p034
+slug: human_activity_recognition_from_wearables
+title: "Human Activity Recognition from Wearables"
+summary: "Applied learning project for Human Activity Recognition from Wearables with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+  - model_evaluation
+  - inference_design
+template: ml_engineering_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.human_activity_recognition_from_wearables.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/human_activity_recognition_from_wearables"

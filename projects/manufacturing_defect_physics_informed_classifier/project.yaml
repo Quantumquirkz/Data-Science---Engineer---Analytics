@@ -1,0 +1,25 @@
+id: p045
+slug: manufacturing_defect_physics_informed_classifier
+title: "Manufacturing Defect Physics-Informed Classifier"
+summary: "Applied learning project for Manufacturing Defect Physics-Informed Classifier with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - anomaly_detection
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.manufacturing_defect_physics_informed_classifier.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/manufacturing_defect_physics_informed_classifier"

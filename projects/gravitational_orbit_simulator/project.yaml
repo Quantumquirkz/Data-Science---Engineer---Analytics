@@ -1,0 +1,25 @@
+id: p029
+slug: gravitational_orbit_simulator
+title: "Gravitational Orbit Simulator"
+summary: "Applied learning project for Gravitational Orbit Simulator with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - simulation
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.gravitational_orbit_simulator.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/gravitational_orbit_simulator"

@@ -1,0 +1,26 @@
+id: p087
+slug: smart_grid_fault_localization
+title: "Smart Grid Fault Localization"
+summary: "Applied learning project for Smart Grid Fault Localization with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - anomaly_detection
+  - model_evaluation
+  - inference_design
+template: ml_engineering_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.smart_grid_fault_localization.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/smart_grid_fault_localization"

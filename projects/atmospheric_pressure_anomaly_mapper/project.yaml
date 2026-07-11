@@ -1,0 +1,23 @@
+id: p005
+slug: atmospheric_pressure_anomaly_mapper
+title: "Atmospheric Pressure Anomaly Mapper"
+summary: "Applied learning project for Atmospheric Pressure Anomaly Mapper with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+  - anomaly_detection
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.atmospheric_pressure_anomaly_mapper.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/atmospheric_pressure_anomaly_mapper"

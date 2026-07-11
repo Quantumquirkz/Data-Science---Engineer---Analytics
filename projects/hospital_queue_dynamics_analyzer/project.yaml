@@ -1,0 +1,22 @@
+id: p033
+slug: hospital_queue_dynamics_analyzer
+title: "Hospital Queue Dynamics Analyzer"
+summary: "Applied learning project for Hospital Queue Dynamics Analyzer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.hospital_queue_dynamics_analyzer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/hospital_queue_dynamics_analyzer"

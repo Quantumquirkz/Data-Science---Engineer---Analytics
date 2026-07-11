@@ -1,0 +1,27 @@
+id: p071
+slug: renewable_energy_mix_optimizer
+title: "Renewable Energy Mix Optimizer"
+summary: "Applied learning project for Renewable Energy Mix Optimizer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - optimization
+template: capstone_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.renewable_energy_mix_optimizer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/renewable_energy_mix_optimizer"

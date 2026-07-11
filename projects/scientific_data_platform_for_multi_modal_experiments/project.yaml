@@ -1,0 +1,25 @@
+id: p076
+slug: scientific_data_platform_for_multi_modal_experiments
+title: "Scientific Data Platform for Multi-Modal Experiments"
+summary: "Applied learning project for Scientific Data Platform for Multi-Modal Experiments with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - data_modeling
+  - pipeline_design
+  - scalable_data_patterns
+template: data_engineering_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - data_contract
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.scientific_data_platform_for_multi_modal_experiments.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/scientific_data_platform_for_multi_modal_experiments"

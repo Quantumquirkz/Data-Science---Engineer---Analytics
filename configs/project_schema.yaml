@@ -1,0 +1,50 @@
+# Project Metadata Schema
+
+allowed_tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+  - scientific_computing
+
+allowed_difficulties:
+  - beginner
+  - intermediate
+  - advanced
+
+allowed_domains:
+  - physical_systems
+  - environmental_systems
+  - energy_systems
+  - finance_risk
+  - biology_health
+  - industrial_analytics
+  - large_scale_data
+
+allowed_templates:
+  - analytics_project
+  - data_science_project
+  - data_engineering_project
+  - ml_engineering_project
+  - scientific_computing_project
+  - capstone_project
+
+allowed_maturity:
+  - featured
+  - active
+  - candidate
+  - archived
+
+allowed_data_policies:
+  - synthetic_or_sample
+  - public_dataset
+  - external_required
+  - restricted_not_committed
+
+allowed_artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+  - data_contract
+  - model

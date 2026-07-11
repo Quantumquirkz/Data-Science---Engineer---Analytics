@@ -1,0 +1,23 @@
+id: p088
+slug: solar_irradiance_forecasting
+title: "Solar Irradiance Forecasting"
+summary: "Applied learning project for Solar Irradiance Forecasting with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - energy_systems
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.solar_irradiance_forecasting.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/solar_irradiance_forecasting"

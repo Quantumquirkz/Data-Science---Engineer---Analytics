@@ -1,0 +1,21 @@
+id: p070
+slug: reinforcement_learning_for_adaptive_traffic_lights
+title: "Reinforcement Learning for Adaptive Traffic Lights"
+summary: "Applied learning project for Reinforcement Learning for Adaptive Traffic Lights with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: intermediate
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.reinforcement_learning_for_adaptive_traffic_lights.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/reinforcement_learning_for_adaptive_traffic_lights"

@@ -1,0 +1,24 @@
+id: p051
+slug: neutrino_detector_event_clustering
+title: "Neutrino Detector Event Clustering"
+summary: "Applied learning project for Neutrino Detector Event Clustering with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.neutrino_detector_event_clustering.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/neutrino_detector_event_clustering"

@@ -1,0 +1,24 @@
+id: p010
+slug: computational_topology_for_data_shapes
+title: "Computational Topology for Data Shapes"
+summary: "Applied learning project for Computational Topology for Data Shapes with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.computational_topology_for_data_shapes.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/computational_topology_for_data_shapes"

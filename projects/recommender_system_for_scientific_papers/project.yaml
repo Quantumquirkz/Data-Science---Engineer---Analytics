@@ -1,0 +1,25 @@
+id: p068
+slug: recommender_system_for_scientific_papers
+title: "Recommender System for Scientific Papers"
+summary: "Applied learning project for Recommender System for Scientific Papers with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - model_evaluation
+  - inference_design
+  - scalable_data_patterns
+template: ml_engineering_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.recommender_system_for_scientific_papers.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/recommender_system_for_scientific_papers"

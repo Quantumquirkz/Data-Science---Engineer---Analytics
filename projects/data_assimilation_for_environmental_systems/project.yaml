@@ -1,0 +1,26 @@
+id: p013
+slug: data_assimilation_for_environmental_systems
+title: "Data Assimilation for Environmental Systems"
+summary: "Applied learning project for Data Assimilation for Environmental Systems with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+template: capstone_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.data_assimilation_for_environmental_systems.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/data_assimilation_for_environmental_systems"

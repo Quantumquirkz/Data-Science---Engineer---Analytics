@@ -1,0 +1,26 @@
+id: p077
+slug: scientific_experiment_metadata_knowledge_graph
+title: "Scientific Experiment Metadata Knowledge Graph"
+summary: "Applied learning project for Scientific Experiment Metadata Knowledge Graph with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - graph_analytics
+  - data_modeling
+  - pipeline_design
+  - scalable_data_patterns
+template: data_engineering_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - data_contract
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.scientific_experiment_metadata_knowledge_graph.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/scientific_experiment_metadata_knowledge_graph"

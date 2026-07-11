@@ -1,0 +1,21 @@
+id: p025
+slug: financial_regime_change_detector
+title: "Financial Regime Change Detector"
+summary: "Applied learning project for Financial Regime Change Detector with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: beginner
+domain:
+  - finance_risk
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.financial_regime_change_detector.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/financial_regime_change_detector"

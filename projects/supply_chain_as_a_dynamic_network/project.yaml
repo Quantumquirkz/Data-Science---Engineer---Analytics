@@ -1,0 +1,26 @@
+id: p093
+slug: supply_chain_as_a_dynamic_network
+title: "Supply Chain as a Dynamic Network"
+summary: "Applied learning project for Supply Chain as a Dynamic Network with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - graph_analytics
+template: capstone_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.supply_chain_as_a_dynamic_network.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/supply_chain_as_a_dynamic_network"

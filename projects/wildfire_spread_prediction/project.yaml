@@ -1,0 +1,23 @@
+id: p099
+slug: wildfire_spread_prediction
+title: "Wildfire Spread Prediction"
+summary: "Applied learning project for Wildfire Spread Prediction with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.wildfire_spread_prediction.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/wildfire_spread_prediction"

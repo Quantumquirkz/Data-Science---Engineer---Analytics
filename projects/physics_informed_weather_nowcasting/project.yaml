@@ -1,0 +1,25 @@
+id: p059
+slug: physics_informed_weather_nowcasting
+title: "Physics-Informed Weather Nowcasting"
+summary: "Applied learning project for Physics-Informed Weather Nowcasting with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - forecasting
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.physics_informed_weather_nowcasting.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/physics_informed_weather_nowcasting"

@@ -1,0 +1,24 @@
+id: p056
+slug: particle_collision_feature_extraction_pipeline
+title: "Particle Collision Feature Extraction Pipeline"
+summary: "Applied learning project for Particle Collision Feature Extraction Pipeline with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.particle_collision_feature_extraction_pipeline.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/particle_collision_feature_extraction_pipeline"

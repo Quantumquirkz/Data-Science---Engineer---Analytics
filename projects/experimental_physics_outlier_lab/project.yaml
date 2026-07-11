@@ -1,0 +1,25 @@
+id: p022
+slug: experimental_physics_outlier_lab
+title: "Experimental Physics Outlier Lab"
+summary: "Applied learning project for Experimental Physics Outlier Lab with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - anomaly_detection
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.experimental_physics_outlier_lab.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/experimental_physics_outlier_lab"

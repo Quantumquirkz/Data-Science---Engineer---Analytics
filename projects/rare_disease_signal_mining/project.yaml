@@ -1,0 +1,22 @@
+id: p066
+slug: rare_disease_signal_mining
+title: "Rare Disease Signal Mining"
+summary: "Applied learning project for Rare Disease Signal Mining with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.rare_disease_signal_mining.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/rare_disease_signal_mining"

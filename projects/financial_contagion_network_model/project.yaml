@@ -1,0 +1,22 @@
+id: p024
+slug: financial_contagion_network_model
+title: "Financial Contagion Network Model"
+summary: "Applied learning project for Financial Contagion Network Model with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: beginner
+domain:
+  - finance_risk
+skills:
+  - reproducible_workflows
+  - graph_analytics
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.financial_contagion_network_model.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/financial_contagion_network_model"

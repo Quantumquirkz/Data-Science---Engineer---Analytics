@@ -1,0 +1,24 @@
+id: p030
+slug: gravitational_wave_signal_search
+title: "Gravitational Wave Signal Search"
+summary: "Applied learning project for Gravitational Wave Signal Search with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.gravitational_wave_signal_search.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/gravitational_wave_signal_search"

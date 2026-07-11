@@ -1,0 +1,22 @@
+id: p090
+slug: sports_biomechanics_motion_analyzer
+title: "Sports Biomechanics Motion Analyzer"
+summary: "Applied learning project for Sports Biomechanics Motion Analyzer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - biology_health
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.sports_biomechanics_motion_analyzer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/sports_biomechanics_motion_analyzer"

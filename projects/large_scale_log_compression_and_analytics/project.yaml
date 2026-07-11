@@ -1,0 +1,25 @@
+id: p040
+slug: large_scale_log_compression_and_analytics
+title: "Large-Scale Log Compression and Analytics"
+summary: "Applied learning project for Large-Scale Log Compression and Analytics with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - data_modeling
+  - pipeline_design
+  - scalable_data_patterns
+template: data_engineering_project
+maturity: featured
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - data_contract
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.large_scale_log_compression_and_analytics.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/large_scale_log_compression_and_analytics"

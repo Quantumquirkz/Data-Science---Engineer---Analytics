@@ -1,0 +1,24 @@
+id: p083
+slug: shockwave_event_detection_in_sensor_arrays
+title: "Shockwave Event Detection in Sensor Arrays"
+summary: "Applied learning project for Shockwave Event Detection in Sensor Arrays with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: advanced
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.shockwave_event_detection_in_sensor_arrays.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/shockwave_event_detection_in_sensor_arrays"

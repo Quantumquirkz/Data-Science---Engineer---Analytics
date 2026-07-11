@@ -1,0 +1,24 @@
+id: p012
+slug: crop_yield_physics_and_data_model
+title: "Crop Yield Physics-and-Data Model"
+summary: "Applied learning project for Crop Yield Physics-and-Data Model with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: beginner
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.crop_yield_physics_and_data_model.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/crop_yield_physics_and_data_model"

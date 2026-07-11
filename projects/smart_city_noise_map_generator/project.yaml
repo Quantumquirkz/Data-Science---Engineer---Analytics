@@ -1,0 +1,25 @@
+id: p085
+slug: smart_city_noise_map_generator
+title: "Smart City Noise Map Generator"
+summary: "Applied learning project for Smart City Noise Map Generator with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: capstone_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.smart_city_noise_map_generator.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/smart_city_noise_map_generator"

@@ -1,0 +1,24 @@
+id: p055
+slug: optical_experiment_noise_characterization
+title: "Optical Experiment Noise Characterization"
+summary: "Applied learning project for Optical Experiment Noise Characterization with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+  - scientific_computing
+difficulty: intermediate
+domain:
+  - physical_systems
+skills:
+  - reproducible_workflows
+  - numerical_methods
+  - scientific_visualization
+template: scientific_computing_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.optical_experiment_noise_characterization.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/optical_experiment_noise_characterization"

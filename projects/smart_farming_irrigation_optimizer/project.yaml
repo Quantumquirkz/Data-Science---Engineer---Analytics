@@ -1,0 +1,27 @@
+id: p086
+slug: smart_farming_irrigation_optimizer
+title: "Smart Farming Irrigation Optimizer"
+summary: "Applied learning project for Smart Farming Irrigation Optimizer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+  - optimization
+template: capstone_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.smart_farming_irrigation_optimizer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/smart_farming_irrigation_optimizer"

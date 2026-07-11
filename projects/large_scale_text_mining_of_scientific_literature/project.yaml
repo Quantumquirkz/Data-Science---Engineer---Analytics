@@ -1,0 +1,25 @@
+id: p043
+slug: large_scale_text_mining_of_scientific_literature
+title: "Large-Scale Text Mining of Scientific Literature"
+summary: "Applied learning project for Large-Scale Text Mining of Scientific Literature with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_engineering
+  - ml_engineering
+difficulty: advanced
+domain:
+  - large_scale_data
+skills:
+  - reproducible_workflows
+  - data_modeling
+  - pipeline_design
+  - scalable_data_patterns
+template: data_engineering_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - data_contract
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.large_scale_text_mining_of_scientific_literature.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/large_scale_text_mining_of_scientific_literature"

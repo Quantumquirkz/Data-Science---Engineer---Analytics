@@ -1,0 +1,22 @@
+id: p072
+slug: research_trend_forecasting_engine
+title: "Research Trend Forecasting Engine"
+summary: "Applied learning project for Research Trend Forecasting Engine with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+  - forecasting
+template: data_science_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.research_trend_forecasting_engine.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/research_trend_forecasting_engine"

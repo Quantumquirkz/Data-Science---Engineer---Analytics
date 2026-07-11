@@ -1,0 +1,21 @@
+id: p081
+slug: semiconductor_process_variation_analyzer
+title: "Semiconductor Process Variation Analyzer"
+summary: "Applied learning project for Semiconductor Process Variation Analyzer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_science
+difficulty: advanced
+domain:
+  - industrial_analytics
+skills:
+  - reproducible_workflows
+template: data_science_project
+maturity: candidate
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.semiconductor_process_variation_analyzer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/semiconductor_process_variation_analyzer"

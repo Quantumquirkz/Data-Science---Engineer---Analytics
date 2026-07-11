@@ -1,0 +1,28 @@
+id: p020
+slug: environmental_sensor_network_placement_optimizer
+title: "Environmental Sensor Network Placement Optimizer"
+summary: "Applied learning project for Environmental Sensor Network Placement Optimizer with reproducible notebooks, metadata, and portfolio-ready pipeline structure."
+tracks:
+  - data_analytics
+  - data_science
+  - data_engineering
+  - ml_engineering
+  - scientific_computing
+difficulty: advanced
+domain:
+  - environmental_systems
+skills:
+  - reproducible_workflows
+  - optimization
+  - graph_analytics
+template: capstone_project
+maturity: active
+data_policy: synthetic_or_sample
+artifacts:
+  - notebook
+  - pipeline
+  - report
+  - app
+commands:
+  run: "PYTHONPATH=src:. uv run python -m projects.environmental_sensor_network_placement_optimizer.src.pipeline"
+  test: "PYTHONPATH=src:. uv run pytest projects/environmental_sensor_network_placement_optimizer"

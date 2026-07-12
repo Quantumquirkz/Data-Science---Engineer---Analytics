@@ -36,3 +36,27 @@ A complete learning artifact should support three depths:
 \]
 
 This means the same topic should be understandable operationally, derivable formally, and extensible critically.
+
+## Teaching Quality Contract
+
+A level is not considered complete only because a file exists. Every implemented
+level must help a learner who starts from zero.
+
+Required level README sections:
+
+- `Start From Zero`
+- `Step-By-Step Learning Path`
+- `Worked Micro-Example`
+- `Guided Practice`
+- `Before You Move On`
+
+Required notebook behavior:
+
+- At least 10 teaching cells.
+- Plain-language vocabulary before tools.
+- A small executable cell that does not require large data.
+- A guided reasoning exercise.
+- A self-check section with no grades.
+
+These requirements are enforced by `validate_curriculum()` and
+`scripts/validate_project_structure.py`.

@@ -46,5 +46,16 @@
   ],
   "commands": {
     "run": "PYTHONPATH=src:. uv run python -m projects.rare_disease_signal_mining.src.pipeline"
+  },
+  "teaching_contract": {
+    "assumes_zero_background": true,
+    "required_sections": [
+      "Start From Zero",
+      "Step-By-Step Learning Path",
+      "Worked Micro-Example",
+      "Guided Practice",
+      "Before You Move On"
+    ],
+    "notebook_required_cells_min": 10
   }
 }

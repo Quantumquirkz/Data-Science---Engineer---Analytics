@@ -42,6 +42,14 @@ def _string_tuple(value: object) -> tuple[str, ...]:
     return (str(value),)
 
 
+def _read_notebook(path: Path) -> dict[str, object]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _word_count(text: str) -> int:
+    return len([word for word in text.replace("`", " ").split() if word.strip()])
+
+
 def projects_by_track() -> dict[str, tuple[ProjectRecord, ...]]:
     """Return project records grouped by learning track."""
 
@@ -160,9 +168,36 @@ def validate_curriculum(curriculum_root: Path | None = None) -> tuple[str, ...]:
         for record in levels:
             if not record.readme_path.exists():
                 failures.append(f"{track} {record.level}: missing README.md")
+                continue
+            readme_text = record.readme_path.read_text(encoding="utf-8")
+            required_sections = (
+                "## Start From Zero",
+                "## Step-By-Step Learning Path",
+                "## Worked Micro-Example",
+                "## Guided Practice",
+                "## Before You Move On",
+            )
+            for section in required_sections:
+                if section not in readme_text:
+                    failures.append(f"{track} {record.level}: missing teaching section {section}")
+            if _word_count(readme_text) < 650:
+                failures.append(f"{track} {record.level}: README is too short for step-by-step teaching")
             for notebook_path in record.notebook_paths:
                 if not notebook_path.exists():
                     failures.append(f"{track} {record.level}: missing notebook {notebook_path.relative_to(_repo_root())}")
+                    continue
+                notebook = _read_notebook(notebook_path)
+                cells = notebook.get("cells", [])
+                if not isinstance(cells, list) or len(cells) < 10:
+                    failures.append(f"{track} {record.level}: notebook has fewer than 10 teaching cells")
+                    continue
+                markdown_text = "\n".join(
+                    "".join(cell.get("source", []))
+                    for cell in cells
+                    if isinstance(cell, dict) and cell.get("cell_type") == "markdown"
+                )
+                if "Start from zero" not in markdown_text or "Self-check without grades" not in markdown_text:
+                    failures.append(f"{track} {record.level}: notebook lacks zero-background teaching prompts")
             for project_id in record.project_ids:
                 try:
                     resolve_project(project_id)

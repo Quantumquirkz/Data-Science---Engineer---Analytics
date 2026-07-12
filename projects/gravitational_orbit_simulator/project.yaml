@@ -20,6 +20,8 @@ artifacts:
   - notebook
   - pipeline
   - report
+learning_missions:
+  - p029-sc-l01-m01
 commands:
   run: "PYTHONPATH=src:. uv run python -m projects.gravitational_orbit_simulator.src.pipeline"
   test: "PYTHONPATH=src:. uv run pytest projects/gravitational_orbit_simulator"

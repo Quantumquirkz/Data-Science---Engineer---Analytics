@@ -48,3 +48,6 @@ allowed_artifacts:
   - app
   - data_contract
   - model
+
+optional_fields:
+  - learning_missions

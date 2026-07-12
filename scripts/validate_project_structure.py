@@ -11,6 +11,8 @@ if str(SRC) not in sys.path:
 from data_intelligence_engineering.catalog.project_registry import discover_project_records
 from data_intelligence_engineering.catalog.project_registry import validate_registry
 from data_intelligence_engineering.core.validation import validate_project_root
+from data_intelligence_engineering.curriculum import load_mission_registry
+from data_intelligence_engineering.curriculum import validate_curriculum
 
 ALLOWED_TRACKS = {"data_analytics", "data_science", "data_engineering", "ml_engineering", "scientific_computing"}
 ALLOWED_DIFFICULTIES = {"beginner", "intermediate", "advanced"}
@@ -49,6 +51,8 @@ STRICT_PILOT_REQUIRED = ("project.yaml", "tests", "reports/README.md")
 
 def main() -> None:
     failures: list[str] = []
+    failures.extend(validate_curriculum())
+    known_mission_ids = {mission.id for mission in load_mission_registry()}
     registry_result = validate_registry()
     if registry_result.duplicate_ids:
         failures.append(f"duplicate project ids: {', '.join(registry_result.duplicate_ids)}")
@@ -77,6 +81,9 @@ def main() -> None:
             failures.append(f"{record.slug}: invalid maturity {record.maturity}")
         if not record.commands.get("run") or not record.commands.get("test"):
             failures.append(f"{record.slug}: missing run/test commands")
+        for mission_id in record.learning_mission_ids:
+            if mission_id not in known_mission_ids:
+                failures.append(f"{record.slug}: unknown learning mission {mission_id}")
         if record.slug in STRICT_PILOT_PROJECTS:
             missing_pilot = [relative for relative in STRICT_PILOT_REQUIRED if not (record.canonical_path / relative).exists()]
             if missing_pilot:

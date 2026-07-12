@@ -38,6 +38,7 @@ class ProjectRecord:
     artifacts: tuple[str, ...]
     commands: dict[str, str]
     canonical_path: Path
+    learning_mission_ids: tuple[str, ...] = ()
     legacy_paths: tuple[Path, ...] = ()
 
     @property

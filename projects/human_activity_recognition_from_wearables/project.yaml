@@ -20,6 +20,8 @@ artifacts:
   - notebook
   - pipeline
   - app
+learning_missions:
+  - p034-mle-l01-m01
 commands:
   run: "PYTHONPATH=src:. uv run python -m projects.human_activity_recognition_from_wearables.src.pipeline"
   test: "PYTHONPATH=src:. uv run pytest projects/human_activity_recognition_from_wearables"

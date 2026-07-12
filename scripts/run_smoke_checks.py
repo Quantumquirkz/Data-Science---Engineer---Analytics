@@ -12,6 +12,8 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from data_intelligence_engineering import FEATURED_PROJECTS
+from data_intelligence_engineering.curriculum import discover_levels
+from data_intelligence_engineering.curriculum import load_mission_registry
 
 
 def _import_or_fail(module_name: str) -> None:
@@ -20,10 +22,16 @@ def _import_or_fail(module_name: str) -> None:
 
 def main() -> None:
     _import_or_fail("data_intelligence_engineering")
+    _import_or_fail("data_intelligence_engineering.curriculum")
     _import_or_fail("projects._portfolio_common")
     _import_or_fail("projects.sensor_drift_detection.src.pipeline")
     _import_or_fail("projects.gravitational_orbit_simulator.src.pipeline")
     _import_or_fail("projects.renewable_energy_mix_optimizer.src.pipeline")
+
+    levels = discover_levels()
+    missions = load_mission_registry()
+    assert len(levels) == 50
+    assert len(missions) == 50
 
     from projects.sensor_drift_detection.src.pipeline import run_sensor_drift_pipeline
     from projects.gravitational_orbit_simulator.src.pipeline import run_gravitational_orbit_simulator_pipeline
@@ -37,7 +45,7 @@ def main() -> None:
     assert not orbit.model_result.metrics.empty
     assert not renewable.model_result.metrics.empty
 
-    print(f"Smoke checks passed for: {', '.join(FEATURED_PROJECTS[:3])}")
+    print(f"Smoke checks passed for: {', '.join(FEATURED_PROJECTS[:3])}; curriculum levels={len(levels)} missions={len(missions)}")
 
 
 if __name__ == "__main__":

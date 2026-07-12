@@ -45,6 +45,7 @@ class ProjectRegistryTest(unittest.TestCase):
         self.assertEqual(len(ids), 100)
         self.assertEqual(len(slugs), 100)
         self.assertTrue(all(record.tracks for record in result.records))
+        self.assertTrue(any(record.learning_mission_ids for record in result.records))
 
 
 if __name__ == "__main__":

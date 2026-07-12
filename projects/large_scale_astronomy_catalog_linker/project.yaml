@@ -20,6 +20,8 @@ artifacts:
   - notebook
   - pipeline
   - data_contract
+learning_missions:
+  - p039-de-l01-m01
 commands:
   run: "PYTHONPATH=src:. uv run python -m projects.large_scale_astronomy_catalog_linker.src.pipeline"
   test: "PYTHONPATH=src:. uv run pytest projects/large_scale_astronomy_catalog_linker"

@@ -137,6 +137,7 @@ def _record_from_metadata(project_dir: Path, metadata: dict[str, Any], fallback_
         artifacts=_tuple_field(metadata, "artifacts") or ("notebook", "pipeline"),
         commands=dict(metadata.get("commands") or {}),
         canonical_path=project_dir,
+        learning_mission_ids=_tuple_field(metadata, "learning_missions"),
         legacy_paths=(project_dir,),
     )
 

@@ -18,6 +18,8 @@ artifacts:
   - notebook
   - pipeline
   - report
+learning_missions:
+  - p002-ds-l01-m01
 commands:
   run: "PYTHONPATH=src:. uv run python -m projects.air_quality_hotspot_prediction.src.pipeline"
   test: "PYTHONPATH=src:. uv run pytest projects/air_quality_hotspot_prediction"

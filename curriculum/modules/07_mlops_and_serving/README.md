@@ -1,6 +1,46 @@
 # MLOps And Serving
 
-This module groups projects and notebooks that teach mlops and serving in the repository.
+This module teaches the lifecycle around machine learning systems: experiment
+tracking, model packaging, inference contracts, deployment surfaces, monitoring,
+and rollback. In this repository, the first implementation surface is local and
+portfolio-friendly; the concepts are production-oriented.
+
+## Learning Outcomes
+
+- Record parameters, metrics, artifacts, code version, and data assumptions.
+- Separate training code from inference code.
+- Define an input schema for prediction.
+- Explain model versioning and registry concepts.
+- Monitor drift, performance decay, and operational errors.
+- Describe when to retrain, rollback, or retire a model.
+
+## Serving Lifecycle
+
+```mermaid
+flowchart LR
+    experiment["Experiment"] --> candidate["Candidate model"]
+    candidate --> evaluate["Evaluation gate"]
+    evaluate --> registry["Registry or model card"]
+    registry --> inference["Inference interface"]
+    inference --> monitor["Monitoring"]
+    monitor --> action["Retrain rollback retire"]
+```
+
+## Core Concepts
+
+- **Experiment tracking**: durable record of training context and outputs.
+- **Model registry**: versioned model management with lineage.
+- **Inference contract**: accepted inputs, outputs, errors, and latency
+  expectations.
+- **Data drift**: input distribution changes.
+- **Concept drift**: relationship between inputs and target changes.
+- **Model card**: documented intended use, limitations, and risks.
+
+## References
+
+- MLflow documentation: https://mlflow.org/docs/latest/
+- MLflow tracking: https://mlflow.org/docs/latest/ml/tracking/
+- MLflow model registry: https://mlflow.org/docs/latest/ml/model-registry/
 
 ## Projects
 

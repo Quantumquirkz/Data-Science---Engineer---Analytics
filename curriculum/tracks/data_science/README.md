@@ -4,6 +4,33 @@
 
 Build practical capability in data science through reusable notebooks, project READMEs, and portfolio-grade implementations.
 
+Data Science is the discipline of using data, statistics, domain knowledge, and
+models to answer questions under uncertainty. The data scientist asks: what
+pattern is real, what prediction is useful, what assumptions are required, and
+how do we know the method generalizes?
+
+## Role Mental Model
+
+```mermaid
+flowchart LR
+    problem["Problem framing"] --> data["Data audit"]
+    data --> baseline["Baseline"]
+    baseline --> features["Features"]
+    features --> model["Model"]
+    model --> validation["Validation"]
+    validation --> interpretation["Interpretation"]
+    interpretation --> limitations["Limitations"]
+```
+
+## Core Competencies
+
+- Frame prediction, inference, detection, clustering, and forecasting tasks.
+- Audit missingness, leakage, target definition, and sampling bias.
+- Build baselines and compare against more complex methods.
+- Choose validation strategies that match the data generating process.
+- Interpret metrics in domain terms.
+- Explain uncertainty, error sources, and limitations.
+
 ## Prerequisites
 
 - Python fundamentals.
@@ -18,6 +45,20 @@ Build practical capability in data science through reusable notebooks, project R
 - `04_machine_learning` - Machine Learning
 - `08_scientific_computing` - Scientific Computing
 - `09_capstone_systems` - Capstone Systems
+
+## Checkpoints
+
+1. Identify target, features, leakage risks, and observation grain.
+2. Build a simple baseline and justify the metric.
+3. Choose train/validation/test logic appropriate to the data.
+4. Compare model performance with diagnostics, not only one score.
+5. Write a limitations section explaining what the model cannot support.
+
+## Exit Standard
+
+A learner completes this track when they can build a reproducible modeling
+workflow with a baseline, explicit validation, defensible metrics, and an
+honest interpretation of uncertainty and failure modes.
 
 ## Representative Projects
 

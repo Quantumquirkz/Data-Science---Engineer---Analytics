@@ -4,6 +4,32 @@
 
 Build practical capability in ml engineering through reusable notebooks, project READMEs, and portfolio-grade implementations.
 
+ML Engineering is the discipline of turning modeling work into repeatable,
+inspectable systems. The ML engineer asks: can this model be trained again,
+evaluated consistently, served through a stable interface, monitored, and
+replaced when it fails?
+
+## Role Mental Model
+
+```mermaid
+flowchart LR
+    data["Data contract"] --> train["Train"]
+    train --> evaluate["Evaluate"]
+    evaluate --> package["Package"]
+    package --> serve["Serve"]
+    serve --> monitor["Monitor"]
+    monitor --> retrain["Retrain or rollback"]
+```
+
+## Core Competencies
+
+- Separate training, evaluation, inference, and app/demo logic.
+- Record parameters, metrics, artifacts, data assumptions, and code version.
+- Define input and output contracts for inference.
+- Monitor data drift, prediction drift, and operational errors.
+- Design rollback and retraining criteria.
+- Communicate model risks through model cards or README limitations.
+
 ## Prerequisites
 
 - Python fundamentals.
@@ -17,6 +43,20 @@ Build practical capability in ml engineering through reusable notebooks, project
 - `05_data_pipelines` - Data Pipelines
 - `07_mlops_and_serving` - MLOps And Serving
 - `09_capstone_systems` - Capstone Systems
+
+## Checkpoints
+
+1. Produce a reproducible training command and evaluation output.
+2. Define the prediction input schema and error behavior.
+3. Save or document artifacts and metrics for comparison.
+4. Explain monitoring signals for drift and model decay.
+5. Write a model limitation and rollback policy.
+
+## Exit Standard
+
+A learner completes this track when they can convert a project model into a
+repeatable training and inference workflow with documented contracts,
+evaluation gates, and operational limits.
 
 ## Representative Projects
 

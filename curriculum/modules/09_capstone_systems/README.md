@@ -1,6 +1,37 @@
 # Capstone Systems
 
-This module groups projects and notebooks that teach capstone systems in the repository.
+This module integrates the repository's roles into end-to-end systems. A
+capstone should combine problem framing, data contracts, pipelines, modeling or
+simulation, evaluation, reporting, and operational limitations.
+
+## Learning Outcomes
+
+- Translate a real problem into a system boundary and success metric.
+- Combine analytics, data science, data engineering, ML engineering, and
+  scientific computing where appropriate.
+- Define interfaces between data, pipeline, model, report, and app.
+- Validate correctness with tests, smoke checks, and documented assumptions.
+- Present limitations honestly and propose the next experiment.
+
+## Capstone System
+
+```mermaid
+flowchart TB
+    problem["Problem and decision"] --> data["Data contract"]
+    data --> pipeline["Pipeline"]
+    pipeline --> method["Model simulation or optimization"]
+    method --> evaluation["Evaluation"]
+    evaluation --> product["Report app or service"]
+    product --> governance["Limitations risks next steps"]
+```
+
+## Required Evidence
+
+- A project README explaining the problem, data, method, outputs, and limits.
+- A reproducible command or notebook.
+- Metadata in `project.yaml`.
+- At least one validation or smoke check.
+- A clear statement of what the project does not prove.
 
 ## Projects
 

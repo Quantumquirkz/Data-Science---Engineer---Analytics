@@ -12,6 +12,12 @@ stable IDs to slug-based folders.
 - [ML Engineering](../curriculum/tracks/ml_engineering/README.md)
 - [Scientific Computing](../curriculum/tracks/scientific_computing/README.md)
 
+## Foundations First
+
+- [Foundational Body Of Knowledge](../curriculum/foundational_body_of_knowledge.md)
+- [Study Plan](../curriculum/study_plan.md)
+- [Bibliography And Reference Spine](../curriculum/bibliography.md)
+
 ## Catalog Views
 
 - [By track](catalog/by_track.md)
@@ -19,7 +25,6 @@ stable IDs to slug-based folders.
 - [By difficulty](catalog/by_difficulty.md)
 - [By artifact](catalog/by_artifact.md)
 - [By tool or skill](catalog/by_tool.md)
-- [By template](catalog/by_template.md)
 - [By template](catalog/by_template.md)
 
 ## How To Study A Project

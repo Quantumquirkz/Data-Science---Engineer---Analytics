@@ -1,6 +1,46 @@
 # Scientific Computing
 
-This module groups projects and notebooks that teach scientific computing in the repository.
+This module teaches computation for systems with mathematical or physical
+structure. It connects differential equations, simulation, numerical error,
+stability, conservation checks, sensitivity analysis, and scientific
+visualization.
+
+## Learning Outcomes
+
+- Define state variables, parameters, units, and update rules.
+- Explain discretization and time-step tradeoffs.
+- Identify numerical instability and approximation error.
+- Validate simulations against invariants or limiting cases.
+- Distinguish simulated proxy data from measured data.
+- Use visualizations to diagnose dynamics, not just present outputs.
+
+## Scientific Computing Loop
+
+```mermaid
+flowchart LR
+    theory["Theory"] --> model["Mathematical model"]
+    model --> numeric["Numerical method"]
+    numeric --> simulate["Simulation"]
+    simulate --> validate["Validation"]
+    validate --> sensitivity["Sensitivity"]
+    sensitivity --> report["Scientific report"]
+```
+
+## Core Concepts
+
+- **State**: quantities needed to describe a system.
+- **Dynamics**: rule governing how state changes.
+- **Discretization**: finite approximation to a continuous system.
+- **Stability**: bounded numerical error under repeated updates.
+- **Conservation**: invariant used as a correctness check.
+- **Sensitivity**: output change under parameter perturbation.
+
+## References
+
+- Scientific Python Lectures: https://lectures.scientific-python.org/
+- NumPy user guide: https://numpy.org/doc/stable/user/index.html
+- OpenStax Calculus Volume 1:
+  https://openstax.org/details/books/calculus-volume-1
 
 ## Projects
 

@@ -1,6 +1,49 @@
 # Machine Learning
 
-This module groups projects and notebooks that teach machine learning in the repository.
+This module teaches supervised and unsupervised learning as disciplined
+estimation, not as library calls. It connects features, baselines, validation,
+metrics, leakage checks, interpretation, and reproducible pipelines.
+
+## Learning Outcomes
+
+- Frame a task as regression, classification, ranking, detection, clustering,
+  or forecasting.
+- Build a baseline before using a complex model.
+- Choose validation that respects time, groups, leakage, and class balance.
+- Interpret metrics in terms of domain cost.
+- Explain model limitations and failure cases.
+
+## Model Development Loop
+
+```mermaid
+flowchart LR
+    task["Task framing"] --> split["Validation design"]
+    split --> baseline["Baseline"]
+    baseline --> features["Features"]
+    features --> train["Train"]
+    train --> metrics["Metrics"]
+    metrics --> diagnostics["Diagnostics"]
+    diagnostics --> limits["Limitations"]
+```
+
+## Core Concepts
+
+- **Generalization**: performance on new cases from the intended population.
+- **Loss function**: mathematical signal optimized during training.
+- **Metric**: external quality measure used to judge usefulness.
+- **Regularization**: constraint that reduces overfitting risk.
+- **Cross-validation**: repeated validation procedure, valid only when its data
+  assumptions match the problem.
+- **Leakage**: using information unavailable at prediction time.
+
+## References
+
+- scikit-learn user guide: https://scikit-learn.org/stable/user_guide.html
+- scikit-learn estimator map:
+  https://scikit-learn.org/stable/machine_learning_map.html
+- Stanford CS229 notes: https://cs229.stanford.edu/main_notes.pdf
+- Google Machine Learning Crash Course:
+  https://developers.google.com/machine-learning/crash-course
 
 ## Projects
 

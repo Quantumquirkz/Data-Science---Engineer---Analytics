@@ -1,6 +1,73 @@
 # Foundations
 
-This module groups projects and notebooks that teach foundations in the repository.
+This module gives the minimum foundation required before specializing into
+analytics, data science, data engineering, ML engineering, or scientific
+computing. It should be used as a bridge for learners who need to start from
+zero without reducing rigor.
+
+## Learning Outcomes
+
+- Explain what data, variables, observations, features, targets, and metrics
+  mean.
+- Translate a problem statement into a measurable question.
+- Use basic algebra, functions, vectors, probability, and units to reason about
+  data.
+- Write small Python functions and understand how notebooks connect to modules.
+- Identify uncertainty, error, missingness, and assumptions.
+- Read a project README and locate its data, pipeline, notebook, and outputs.
+
+## Foundation Stack
+
+```mermaid
+flowchart TB
+    algebra["Algebra and units"]
+    functions["Functions"]
+    vectors["Vectors and tables"]
+    probability["Probability"]
+    programming["Programming"]
+    data["Data schemas"]
+    stats["Statistics"]
+    projects["Projects"]
+
+    algebra --> functions
+    functions --> vectors
+    vectors --> data
+    probability --> stats
+    programming --> data
+    data --> projects
+    stats --> projects
+```
+
+## Core Concepts
+
+- **Problem framing**: convert vague intent into a question, scope, and
+  measurable output.
+- **Observation**: one row, event, time step, or simulated unit.
+- **Variable**: a measured or computed property.
+- **Feature**: a variable used as model input.
+- **Target**: a value, class, event, or quantity the project predicts,
+  estimates, detects, or explains.
+- **Metric**: a function used to judge quality or behavior.
+- **Assumption**: a condition that must be true for a result to be valid.
+- **Reproducibility**: another person can rerun the workflow and understand the
+  same outputs.
+
+## First Principles Checklist
+
+Before working on any project, answer:
+
+1. What is the unit of observation?
+2. What is measured, simulated, predicted, or optimized?
+3. What assumptions are made about data collection?
+4. What can go wrong with missingness, units, or time order?
+5. What baseline should be compared against?
+6. What output proves the project did something useful?
+7. What limitation should be documented before showing the result?
+
+## References
+
+- [Foundational Body Of Knowledge](../../foundational_body_of_knowledge.md)
+- [Bibliography And Reference Spine](../../bibliography.md)
 
 ## Projects
 

@@ -4,6 +4,33 @@
 
 Build practical capability in scientific computing through reusable notebooks, project READMEs, and portfolio-grade implementations.
 
+Scientific Computing is the discipline of using numerical methods to study
+systems with mathematical, physical, biological, or engineering structure. The
+scientific computing practitioner asks: what are the state variables, governing
+rules, units, numerical approximations, stability limits, and validation
+invariants?
+
+## Role Mental Model
+
+```mermaid
+flowchart LR
+    theory["Theory"] --> state["State variables"]
+    state --> equations["Governing equations"]
+    equations --> discretize["Discretization"]
+    discretize --> simulate["Simulation"]
+    simulate --> validate["Invariant checks"]
+    validate --> sensitivity["Sensitivity analysis"]
+```
+
+## Core Competencies
+
+- Define state variables, parameters, units, and boundary conditions.
+- Choose numerical approximations and understand their stability limits.
+- Validate simulations against invariants, analytical cases, or empirical data.
+- Separate model assumptions from numerical implementation details.
+- Quantify sensitivity to parameters and time/space resolution.
+- Communicate approximation limits in reports and notebooks.
+
 ## Prerequisites
 
 - Python fundamentals.
@@ -17,6 +44,20 @@ Build practical capability in scientific computing through reusable notebooks, p
 - `03_statistics_and_experiments` - Statistics And Experiments
 - `08_scientific_computing` - Scientific Computing
 - `09_capstone_systems` - Capstone Systems
+
+## Checkpoints
+
+1. Define system state, parameters, units, and governing assumptions.
+2. Choose a time step or resolution and explain the tradeoff.
+3. Test at least one invariant or known limiting case.
+4. Run a sensitivity check over one important parameter.
+5. Explain where simulated proxy data differs from measured data.
+
+## Exit Standard
+
+A learner completes this track when they can implement a simulation or
+scientific model, validate it against mathematical or physical expectations,
+and state the numerical and domain limits clearly.
 
 ## Representative Projects
 

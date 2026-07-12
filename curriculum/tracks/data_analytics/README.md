@@ -4,6 +4,32 @@
 
 Build practical capability in data analytics through reusable notebooks, project READMEs, and portfolio-grade implementations.
 
+Data Analytics is the discipline of turning observed data into clear,
+decision-ready evidence. The analytical thinker asks: what changed, for whom,
+how much, compared with what baseline, and what decision follows?
+
+## Role Mental Model
+
+```mermaid
+flowchart LR
+    question["Decision question"] --> metric["Metric contract"]
+    metric --> data["Data extraction"]
+    data --> quality["Quality checks"]
+    quality --> analysis["Segment compare explain"]
+    analysis --> narrative["Narrative and recommendation"]
+    narrative --> action["Action or next measurement"]
+```
+
+## Core Competencies
+
+- Translate vague business or scientific questions into measurable metrics.
+- Define grain, filters, numerator, denominator, and time window.
+- Use tabular reasoning: select, filter, join, group, aggregate, sort, and
+  reshape.
+- Distinguish descriptive analytics from causal claims.
+- Communicate uncertainty, missingness, and limitations without hiding them.
+- Design charts around questions rather than decoration.
+
 ## Prerequisites
 
 - Python fundamentals.
@@ -17,6 +43,20 @@ Build practical capability in data analytics through reusable notebooks, project
 - `02_sql_and_analytics` - SQL And Analytics
 - `03_statistics_and_experiments` - Statistics And Experiments
 - `09_capstone_systems` - Capstone Systems
+
+## Checkpoints
+
+1. Explain the grain of a dataset and identify its primary entities.
+2. Define three metrics with exact formulas and known failure modes.
+3. Build a segmented comparison and state whether the comparison is fair.
+4. Produce one chart per analytical question.
+5. Write a one-page decision memo with evidence, caveats, and next action.
+
+## Exit Standard
+
+A learner completes this track when they can take a project README, inspect the
+data or simulated data, define defensible metrics, generate a concise report,
+and explain what cannot be concluded from the evidence.
 
 ## Representative Projects
 

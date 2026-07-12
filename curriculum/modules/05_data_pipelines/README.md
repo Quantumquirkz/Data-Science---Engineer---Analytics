@@ -1,6 +1,38 @@
 # Data Pipelines
 
-This module groups projects and notebooks that teach data pipelines in the repository.
+This module teaches how data moves from source to validated datasets and
+project outputs. The emphasis is deterministic transformation, explicit schemas,
+lineage, idempotence, and testable stages.
+
+## Learning Outcomes
+
+- Split a workflow into ingestion, validation, transformation, feature, and
+  publication stages.
+- Define schema and quality checks before modeling.
+- Explain idempotence and why reruns must be safe.
+- Track row counts, null rates, uniqueness, and freshness across stages.
+- Sketch dependencies as a DAG.
+
+## Pipeline Architecture
+
+```mermaid
+flowchart LR
+    source["Source"] --> ingest["Ingest"]
+    ingest --> validate["Validate schema"]
+    validate --> transform["Transform"]
+    transform --> features["Feature table"]
+    features --> publish["Publish artifact"]
+    publish --> monitor["Monitor"]
+```
+
+## Core Concepts
+
+- **Data contract**: schema, units, keys, and freshness expectations.
+- **DAG**: directed acyclic graph of tasks and dependencies.
+- **Idempotence**: rerunning does not duplicate or corrupt outputs.
+- **Backfill**: intentional recomputation over historical partitions.
+- **Lineage**: trace from output back to source.
+- **Observability**: evidence that a pipeline ran correctly.
 
 ## Projects
 

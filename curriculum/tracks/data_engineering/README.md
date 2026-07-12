@@ -4,6 +4,32 @@
 
 Build practical capability in data engineering through reusable notebooks, project READMEs, and portfolio-grade implementations.
 
+Data Engineering is the discipline of making data trustworthy, available, and
+reusable. The data engineer asks: where did this data come from, what contract
+does it satisfy, what transformations produced it, and can the workflow be
+rerun safely?
+
+## Role Mental Model
+
+```mermaid
+flowchart LR
+    source["Source"] --> ingest["Ingest"]
+    ingest --> contract["Schema contract"]
+    contract --> quality["Quality checks"]
+    quality --> transform["Transform"]
+    transform --> publish["Publish"]
+    publish --> observe["Observe and backfill"]
+```
+
+## Core Competencies
+
+- Define schemas, keys, units, freshness expectations, and quality checks.
+- Separate raw, interim, processed, and sample data.
+- Build deterministic transformations.
+- Reason about idempotence, backfills, partitions, and lineage.
+- Explain when local pandas workflows stop scaling and what changes next.
+- Design pipeline stages as a DAG with observable checkpoints.
+
 ## Prerequisites
 
 - Python fundamentals.
@@ -17,6 +43,20 @@ Build practical capability in data engineering through reusable notebooks, proje
 - `05_data_pipelines` - Data Pipelines
 - `06_big_data_and_cloud` - Big Data And Cloud Patterns
 - `09_capstone_systems` - Capstone Systems
+
+## Checkpoints
+
+1. Write a schema for a project dataset before transformation.
+2. Add row-count, null-rate, uniqueness, and valid-range checks.
+3. Draw the pipeline DAG and identify rerunnable stages.
+4. Explain the partitioning strategy for a larger version of the dataset.
+5. Document lineage from source to report or model artifact.
+
+## Exit Standard
+
+A learner completes this track when they can turn a messy source table or log
+stream into a documented, validated, reproducible dataset that another project
+can consume without guessing column meanings or transformation history.
 
 ## Representative Projects
 

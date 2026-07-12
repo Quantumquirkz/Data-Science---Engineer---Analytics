@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L10",
+  "level_number": 10,
+  "title": "Analytics Strategy Capstone",
+  "summary": "Defend an end-to-end analytics system as if it were serving a real organization.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L09"
+  ],
+  "competencies": [
+    "Executive communication",
+    "Decision memos",
+    "Roadmap prioritization"
+  ],
+  "mission_ids": [
+    "p097-da-l10-m01"
+  ],
+  "project_ids": [
+    "p097"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L10/data_analytics_l10_analytics_strategy_capstone.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L10."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/warehouse_robotics_path_optimization/notebooks/warehouse_robotics_path_optimization.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.warehouse_robotics_path_optimization.src.pipeline"
+  }
+}

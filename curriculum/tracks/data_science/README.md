@@ -2,97 +2,42 @@
 
 ## Learning Goal
 
-Build practical capability in data science through reusable notebooks, project READMEs, and portfolio-grade implementations.
+Progress from zero technical background to professional, portfolio-grade practice in Data Science through ten levels, reusable project missions, and notebook-first explanations.
 
-Data Science is the discipline of using data, statistics, domain knowledge, and
-models to answer questions under uncertainty. The data scientist asks: what
-pattern is real, what prediction is useful, what assumptions are required, and
-how do we know the method generalizes?
+## Role Question
 
-## Role Mental Model
+What pattern is real, what prediction is useful, and how uncertain are we?
 
-```mermaid
-flowchart LR
-    problem["Problem framing"] --> data["Data audit"]
-    data --> baseline["Baseline"]
-    baseline --> features["Features"]
-    features --> model["Model"]
-    model --> validation["Validation"]
-    validation --> interpretation["Interpretation"]
-    interpretation --> limitations["Limitations"]
-```
+## Progression Model
 
-## Core Competencies
+This track follows a **game-like progression without grades**:
 
-- Frame prediction, inference, detection, clustering, and forecasting tasks.
-- Audit missingness, leakage, target definition, and sampling bias.
-- Build baselines and compare against more complex methods.
-- Choose validation strategies that match the data generating process.
-- Interpret metrics in domain terms.
-- Explain uncertainty, error sources, and limitations.
+- Levels unlock conceptually through prerequisites, not through a scoring platform.
+- Missions connect levels to real repository projects.
+- Evidence is local, optional, and versionable.
+- The learner can revisit any level after touching a harder project.
 
-## Prerequisites
+## Ten Levels
 
-- Python fundamentals.
-- Basic command-line usage.
-- Ability to run `uv sync` and notebooks from the repository root.
+- [L01: Scientific Questions](levels/L01/README.md) - `implemented`
+- [L02: Python, NumPy, And pandas](levels/L02/README.md) - `implemented`
+- [L03: Probability And Statistics](levels/L03/README.md) - `implemented`
+- [L04: Experimental Design And Inference](levels/L04/README.md) - `implemented`
+- [L05: Supervised Machine Learning](levels/L05/README.md) - `implemented`
+- [L06: Unsupervised Learning](levels/L06/README.md) - `implemented`
+- [L07: Time Series And Forecasting](levels/L07/README.md) - `implemented`
+- [L08: Causal, Bayesian, And Uncertainty Modeling](levels/L08/README.md) - `implemented`
+- [L09: Advanced ML And Scientific Modeling](levels/L09/README.md) - `implemented`
+- [L10: Research-Grade Data Science Capstone](levels/L10/README.md) - `implemented`
 
-## Recommended Module Order
+## Mathematical Rigor
 
-- `00_foundations` - Foundations
-- `01_python_data_stack` - Python Data Stack
-- `03_statistics_and_experiments` - Statistics And Experiments
-- `04_machine_learning` - Machine Learning
-- `08_scientific_computing` - Scientific Computing
-- `09_capstone_systems` - Capstone Systems
+Every level is written in three layers:
 
-## Checkpoints
+- `Applied`: use the concept correctly in practical work.
+- `Graduate`: derive the concept and name assumptions.
+- `Research`: challenge the assumptions and propose stronger variants.
 
-1. Identify target, features, leakage risks, and observation grain.
-2. Build a simple baseline and justify the metric.
-3. Choose train/validation/test logic appropriate to the data.
-4. Compare model performance with diagnostics, not only one score.
-5. Write a limitations section explaining what the model cannot support.
+## Primary Surface
 
-## Exit Standard
-
-A learner completes this track when they can build a reproducible modeling
-workflow with a baseline, explicit validation, defensible metrics, and an
-honest interpretation of uncertainty and failure modes.
-
-## Representative Projects
-
-- `p001` [Adaptive Control for Energy Storage](../../../projects/adaptive_control_for_energy_storage/README.md) - `beginner`, `data_science_project`
-- `p002` [Air Quality Hotspot Prediction](../../../projects/air_quality_hotspot_prediction/README.md) - `beginner`, `data_science_project`
-- `p003` [Airplane Turbulence Pattern Mining](../../../projects/airplane_turbulence_pattern_mining/README.md) - `beginner`, `data_science_project`
-- `p004` [Astronomical Light Curve Classifier](../../../projects/astronomical_light_curve_classifier/README.md) - `beginner`, `data_science_project`
-- `p005` [Atmospheric Pressure Anomaly Mapper](../../../projects/atmospheric_pressure_anomaly_mapper/README.md) - `beginner`, `data_science_project`
-- `p006` [Autonomous Vehicle Sensor Fusion Project](../../../projects/autonomous_vehicle_sensor_fusion_project/README.md) - `beginner`, `data_science_project`
-- `p007` [Battery Degradation Modeling](../../../projects/battery_degradation_modeling/README.md) - `beginner`, `data_science_project`
-- `p008` [Blood Flow Proxy Prediction](../../../projects/blood_flow_proxy_prediction/README.md) - `beginner`, `data_science_project`
-- `p009` [Climate Trend Attribution Project](../../../projects/climate_trend_attribution_project/README.md) - `beginner`, `data_science_project`
-- `p010` [Computational Topology for Data Shapes](../../../projects/computational_topology_for_data_shapes/README.md) - `beginner`, `scientific_computing_project`
-- `p011` [Cosmic Ray Event Pattern Mining](../../../projects/cosmic_ray_event_pattern_mining/README.md) - `beginner`, `scientific_computing_project`
-- `p012` [Crop Yield Physics-and-Data Model](../../../projects/crop_yield_physics_and_data_model/README.md) - `beginner`, `scientific_computing_project`
-- `p013` [Data Assimilation for Environmental Systems](../../../projects/data_assimilation_for_environmental_systems/README.md) - `advanced`, `capstone_project`
-- `p014` [Demand Forecasting for Cold Chain Logistics](../../../projects/demand_forecasting_for_cold_chain_logistics/README.md) - `beginner`, `data_science_project`
-- `p015` [Drone Flight Stability Predictor](../../../projects/drone_flight_stability_predictor/README.md) - `beginner`, `data_science_project`
-- `p017` [Electromagnetic Interference Pattern Detector](../../../projects/electromagnetic_interference_pattern_detector/README.md) - `beginner`, `data_science_project`
-- `p020` [Environmental Sensor Network Placement Optimizer](../../../projects/environmental_sensor_network_placement_optimizer/README.md) - `advanced`, `capstone_project`
-- `p021` [Epidemiological Spread Simulation](../../../projects/epidemiological_spread_simulation/README.md) - `beginner`, `scientific_computing_project`
-- `p022` [Experimental Physics Outlier Lab](../../../projects/experimental_physics_outlier_lab/README.md) - `beginner`, `scientific_computing_project`
-- `p024` [Financial Contagion Network Model](../../../projects/financial_contagion_network_model/README.md) - `beginner`, `data_science_project`
-- `p025` [Financial Regime Change Detector](../../../projects/financial_regime_change_detector/README.md) - `beginner`, `data_science_project`
-- `p026` [Financial Volatility Surface Predictor](../../../projects/financial_volatility_surface_predictor/README.md) - `intermediate`, `data_science_project`
-- `p027` [Fluid Flow Surrogate Model](../../../projects/fluid_flow_surrogate_model/README.md) - `intermediate`, `scientific_computing_project`
-- `p028` [Fraud Detection in Scientific Grant Data](../../../projects/fraud_detection_in_scientific_grant_data/README.md) - `intermediate`, `data_science_project`
-- `p029` [Gravitational Orbit Simulator](../../../projects/gravitational_orbit_simulator/README.md) - `intermediate`, `scientific_computing_project`
-- `p030` [Gravitational Wave Signal Search](../../../projects/gravitational_wave_signal_search/README.md) - `intermediate`, `scientific_computing_project`
-- `p031` [High-Dimensional Feature Selection Lab](../../../projects/high_dimensional_feature_selection_lab/README.md) - `intermediate`, `data_science_project`
-- `p032` [High-Frequency Trading Microstructure Analyzer](../../../projects/high_frequency_trading_microstructure_analyzer/README.md) - `intermediate`, `data_science_project`
-- `p033` [Hospital Queue Dynamics Analyzer](../../../projects/hospital_queue_dynamics_analyzer/README.md) - `intermediate`, `data_science_project`
-- `p034` [Human Activity Recognition from Wearables](../../../projects/human_activity_recognition_from_wearables/README.md) - `advanced`, `ml_engineering_project`
-
-## Notebook Surface
-
-Use each project README as the entry point, then open the linked notebook in `projects/<slug>/notebooks/` for guided exploration.
+Use the level README first, then the linked notebook or project-local notebook.

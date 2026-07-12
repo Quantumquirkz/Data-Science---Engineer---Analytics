@@ -1,0 +1,50 @@
+{
+  "track": "scientific_computing",
+  "level": "L06",
+  "level_number": 6,
+  "title": "Monte Carlo And Stochastic Processes",
+  "summary": "Represent randomness, ensembles, and uncertainty propagation.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "scientific_computing:L05"
+  ],
+  "competencies": [
+    "Sampling",
+    "Variance reduction",
+    "Random walks"
+  ],
+  "mission_ids": [
+    "p044-sc-l06-m01"
+  ],
+  "project_ids": [
+    "p044"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L06/scientific_computing_l06_monte_carlo_and_stochastic_processes.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L06."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/magnetic_field_sensor_reconstruction/notebooks/magnetic_field_sensor_reconstruction.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.magnetic_field_sensor_reconstruction.src.pipeline"
+  }
+}

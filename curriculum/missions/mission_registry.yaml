@@ -1,0 +1,1055 @@
+{
+  "version": 1,
+  "missions": [
+    {
+      "id": "p023-da-l01-m01",
+      "title": "DA L01 mission for p023",
+      "summary": "Use project p023 as the anchor artifact for Data Analytics L01: Data Literacy.",
+      "track": "data_analytics",
+      "level": "L01",
+      "project_id": "p023",
+      "notebook_path": "notebooks/tracks/data_analytics/L01/data_analytics_l01_data_literacy.ipynb",
+      "project_notebook": "projects/experimental_reproducibility_analytics/notebooks/experimental_reproducibility_analytics.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "What is a row?",
+        "What is a metric?",
+        "How do units distort interpretation?"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.experimental_reproducibility_analytics.src.pipeline"
+    },
+    {
+      "id": "p018-da-l02-m01",
+      "title": "DA L02 mission for p018",
+      "summary": "Use project p018 as the anchor artifact for Data Analytics L02: Spreadsheets And SQL Tables.",
+      "track": "data_analytics",
+      "level": "L02",
+      "project_id": "p018",
+      "notebook_path": "notebooks/tracks/data_analytics/L02/data_analytics_l02_spreadsheets_and_sql_tables.ipynb",
+      "project_notebook": "projects/energy_consumption_segmentation/notebooks/energy_consumption_segmentation.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Tabular schemas",
+        "Primary keys",
+        "Aggregation semantics"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.energy_consumption_segmentation.src.pipeline"
+    },
+    {
+      "id": "p019-da-l03-m01",
+      "title": "DA L03 mission for p019",
+      "summary": "Use project p019 as the anchor artifact for Data Analytics L03: Descriptive Analytics.",
+      "track": "data_analytics",
+      "level": "L03",
+      "project_id": "p019",
+      "notebook_path": "notebooks/tracks/data_analytics/L03/data_analytics_l03_descriptive_analytics.ipynb",
+      "project_notebook": "projects/energy_market_scenario_generator/notebooks/energy_market_scenario_generator.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Distributions",
+        "Percentiles",
+        "Cohorts"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.energy_market_scenario_generator.src.pipeline"
+    },
+    {
+      "id": "p033-da-l04-m01",
+      "title": "DA L04 mission for p033",
+      "summary": "Use project p033 as the anchor artifact for Data Analytics L04: Visualization And Communication.",
+      "track": "data_analytics",
+      "level": "L04",
+      "project_id": "p033",
+      "notebook_path": "notebooks/tracks/data_analytics/L04/data_analytics_l04_visualization_and_communication.ipynb",
+      "project_notebook": "projects/hospital_queue_dynamics_analyzer/notebooks/hospital_queue_dynamics_analyzer.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Chart-task alignment",
+        "Annotation",
+        "Misleading scales"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.hospital_queue_dynamics_analyzer.src.pipeline"
+    },
+    {
+      "id": "p041-da-l05-m01",
+      "title": "DA L05 mission for p041",
+      "summary": "Use project p041 as the anchor artifact for Data Analytics L05: Business Metrics And Decisions.",
+      "track": "data_analytics",
+      "level": "L05",
+      "project_id": "p041",
+      "notebook_path": "notebooks/tracks/data_analytics/L05/data_analytics_l05_business_metrics_and_decisions.ipynb",
+      "project_notebook": "projects/large_scale_recommendation_for_learning_paths/notebooks/large_scale_recommendation_for_learning_paths.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "North-star metrics",
+        "Trade-off analysis",
+        "Sensitivity to assumptions"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_recommendation_for_learning_paths.src.pipeline"
+    },
+    {
+      "id": "p046-da-l06-m01",
+      "title": "DA L06 mission for p046",
+      "summary": "Use project p046 as the anchor artifact for Data Analytics L06: Experiment And Product Analytics.",
+      "track": "data_analytics",
+      "level": "L06",
+      "project_id": "p046",
+      "notebook_path": "notebooks/tracks/data_analytics/L06/data_analytics_l06_experiment_and_product_analytics.ipynb",
+      "project_notebook": "projects/material_fatigue_prediction/notebooks/material_fatigue_prediction.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "A/B test logic",
+        "Bias in instrumentation",
+        "Attribution boundaries"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.material_fatigue_prediction.src.pipeline"
+    },
+    {
+      "id": "p054-da-l07-m01",
+      "title": "DA L07 mission for p054",
+      "summary": "Use project p054 as the anchor artifact for Data Analytics L07: Forecasting And Decision Support.",
+      "track": "data_analytics",
+      "level": "L07",
+      "project_id": "p054",
+      "notebook_path": "notebooks/tracks/data_analytics/L07/data_analytics_l07_forecasting_and_decision_support.ipynb",
+      "project_notebook": "projects/online_experiment_bayesian_analyzer/notebooks/online_experiment_bayesian_analyzer.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Lead time",
+        "Forecast horizon",
+        "Cost of error"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.online_experiment_bayesian_analyzer.src.pipeline"
+    },
+    {
+      "id": "p063-da-l08-m01",
+      "title": "DA L08 mission for p063",
+      "summary": "Use project p063 as the anchor artifact for Data Analytics L08: Advanced Analytics Systems.",
+      "track": "data_analytics",
+      "level": "L08",
+      "project_id": "p063",
+      "notebook_path": "notebooks/tracks/data_analytics/L08/data_analytics_l08_advanced_analytics_systems.ipynb",
+      "project_notebook": "projects/protein_folding_embedding_explorer/notebooks/protein_folding_embedding_explorer.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Dashboard contracts",
+        "Semantic layers",
+        "Operational review loops"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.protein_folding_embedding_explorer.src.pipeline"
+    },
+    {
+      "id": "p074-da-l09-m01",
+      "title": "DA L09 mission for p074",
+      "summary": "Use project p074 as the anchor artifact for Data Analytics L09: Analytics Engineering And Governance.",
+      "track": "data_analytics",
+      "level": "L09",
+      "project_id": "p074",
+      "notebook_path": "notebooks/tracks/data_analytics/L09/data_analytics_l09_analytics_engineering_and_governance.ipynb",
+      "project_notebook": "projects/satellite_image_change_detection/notebooks/satellite_image_change_detection.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Metric lineage",
+        "Access policy",
+        "Backfill risk"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.satellite_image_change_detection.src.pipeline"
+    },
+    {
+      "id": "p097-da-l10-m01",
+      "title": "DA L10 mission for p097",
+      "summary": "Use project p097 as the anchor artifact for Data Analytics L10: Analytics Strategy Capstone.",
+      "track": "data_analytics",
+      "level": "L10",
+      "project_id": "p097",
+      "notebook_path": "notebooks/tracks/data_analytics/L10/data_analytics_l10_analytics_strategy_capstone.ipynb",
+      "project_notebook": "projects/warehouse_robotics_path_optimization/notebooks/warehouse_robotics_path_optimization.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Executive communication",
+        "Decision memos",
+        "Roadmap prioritization"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.warehouse_robotics_path_optimization.src.pipeline"
+    },
+    {
+      "id": "p002-ds-l01-m01",
+      "title": "DS L01 mission for p002",
+      "summary": "Use project p002 as the anchor artifact for Data Science L01: Scientific Questions.",
+      "track": "data_science",
+      "level": "L01",
+      "project_id": "p002",
+      "notebook_path": "notebooks/tracks/data_science/L01/data_science_l01_scientific_questions.ipynb",
+      "project_notebook": "projects/air_quality_hotspot_prediction/notebooks/air_quality_hotspot_prediction.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Question formulation",
+        "Observational units",
+        "Target leakage intuition"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.air_quality_hotspot_prediction.src.pipeline"
+    },
+    {
+      "id": "p014-ds-l02-m01",
+      "title": "DS L02 mission for p014",
+      "summary": "Use project p014 as the anchor artifact for Data Science L02: Python, NumPy, And pandas.",
+      "track": "data_science",
+      "level": "L02",
+      "project_id": "p014",
+      "notebook_path": "notebooks/tracks/data_science/L02/data_science_l02_python_numpy_and_pandas.ipynb",
+      "project_notebook": "projects/demand_forecasting_for_cold_chain_logistics/notebooks/demand_forecasting_for_cold_chain_logistics.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Arrays",
+        "Data frames",
+        "Vectorized thinking"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.demand_forecasting_for_cold_chain_logistics.src.pipeline"
+    },
+    {
+      "id": "p025-ds-l03-m01",
+      "title": "DS L03 mission for p025",
+      "summary": "Use project p025 as the anchor artifact for Data Science L03: Probability And Statistics.",
+      "track": "data_science",
+      "level": "L03",
+      "project_id": "p025",
+      "notebook_path": "notebooks/tracks/data_science/L03/data_science_l03_probability_and_statistics.ipynb",
+      "project_notebook": "projects/financial_regime_change_detector/notebooks/financial_regime_change_detector.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Random variables",
+        "Distributions",
+        "Estimation"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.financial_regime_change_detector.src.pipeline"
+    },
+    {
+      "id": "p026-ds-l04-m01",
+      "title": "DS L04 mission for p026",
+      "summary": "Use project p026 as the anchor artifact for Data Science L04: Experimental Design And Inference.",
+      "track": "data_science",
+      "level": "L04",
+      "project_id": "p026",
+      "notebook_path": "notebooks/tracks/data_science/L04/data_science_l04_experimental_design_and_inference.ipynb",
+      "project_notebook": "projects/financial_volatility_surface_predictor/notebooks/financial_volatility_surface_predictor.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Counterfactual reasoning",
+        "Confounding",
+        "Confidence intervals"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.financial_volatility_surface_predictor.src.pipeline"
+    },
+    {
+      "id": "p028-ds-l05-m01",
+      "title": "DS L05 mission for p028",
+      "summary": "Use project p028 as the anchor artifact for Data Science L05: Supervised Machine Learning.",
+      "track": "data_science",
+      "level": "L05",
+      "project_id": "p028",
+      "notebook_path": "notebooks/tracks/data_science/L05/data_science_l05_supervised_machine_learning.ipynb",
+      "project_notebook": "projects/fraud_detection_in_scientific_grant_data/notebooks/fraud_detection_in_scientific_grant_data.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Feature-target split",
+        "Metrics",
+        "Overfitting"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.fraud_detection_in_scientific_grant_data.src.pipeline"
+    },
+    {
+      "id": "p031-ds-l06-m01",
+      "title": "DS L06 mission for p031",
+      "summary": "Use project p031 as the anchor artifact for Data Science L06: Unsupervised Learning.",
+      "track": "data_science",
+      "level": "L06",
+      "project_id": "p031",
+      "notebook_path": "notebooks/tracks/data_science/L06/data_science_l06_unsupervised_learning.ipynb",
+      "project_notebook": "projects/high_dimensional_feature_selection_lab/notebooks/high_dimensional_feature_selection_lab.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Distance choice",
+        "Cluster validity",
+        "Representation learning"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.high_dimensional_feature_selection_lab.src.pipeline"
+    },
+    {
+      "id": "p034-ds-l07-m01",
+      "title": "DS L07 mission for p034",
+      "summary": "Use project p034 as the anchor artifact for Data Science L07: Time Series And Forecasting.",
+      "track": "data_science",
+      "level": "L07",
+      "project_id": "p034",
+      "notebook_path": "notebooks/tracks/data_science/L07/data_science_l07_time_series_and_forecasting.ipynb",
+      "project_notebook": "projects/human_activity_recognition_from_wearables/notebooks/human_activity_recognition_from_wearables.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Lag structure",
+        "Backtesting",
+        "Regime shifts"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.human_activity_recognition_from_wearables.src.pipeline"
+    },
+    {
+      "id": "p037-ds-l08-m01",
+      "title": "DS L08 mission for p037",
+      "summary": "Use project p037 as the anchor artifact for Data Science L08: Causal, Bayesian, And Uncertainty Modeling.",
+      "track": "data_science",
+      "level": "L08",
+      "project_id": "p037",
+      "notebook_path": "notebooks/tracks/data_science/L08/data_science_l08_causal_bayesian_and_uncertainty_modeling.ipynb",
+      "project_notebook": "projects/hydrological_flood_risk_forecasting/notebooks/hydrological_flood_risk_forecasting.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Bayesian updating",
+        "Posterior reasoning",
+        "Causal diagrams"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.hydrological_flood_risk_forecasting.src.pipeline"
+    },
+    {
+      "id": "p082-ds-l09-m01",
+      "title": "DS L09 mission for p082",
+      "summary": "Use project p082 as the anchor artifact for Data Science L09: Advanced ML And Scientific Modeling.",
+      "track": "data_science",
+      "level": "L09",
+      "project_id": "p082",
+      "notebook_path": "notebooks/tracks/data_science/L09/data_science_l09_advanced_ml_and_scientific_modeling.ipynb",
+      "project_notebook": "projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Hybrid models",
+        "Constraint-aware learning",
+        "Error decomposition"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.sensor_drift_detection.src.pipeline"
+    },
+    {
+      "id": "p095-ds-l10-m01",
+      "title": "DS L10 mission for p095",
+      "summary": "Use project p095 as the anchor artifact for Data Science L10: Research-Grade Data Science Capstone.",
+      "track": "data_science",
+      "level": "L10",
+      "project_id": "p095",
+      "notebook_path": "notebooks/tracks/data_science/L10/data_science_l10_research_grade_data_science_capstone.ipynb",
+      "project_notebook": "projects/traffic_flow_as_a_physical_system/notebooks/traffic_flow_as_a_physical_system.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Research protocol",
+        "Ablation logic",
+        "Interpretation boundaries"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.traffic_flow_as_a_physical_system.src.pipeline"
+    },
+    {
+      "id": "p039-de-l01-m01",
+      "title": "DE L01 mission for p039",
+      "summary": "Use project p039 as the anchor artifact for Data Engineering L01: Computing Foundations.",
+      "track": "data_engineering",
+      "level": "L01",
+      "project_id": "p039",
+      "notebook_path": "notebooks/tracks/data_engineering/L01/data_engineering_l01_computing_foundations.ipynb",
+      "project_notebook": "projects/large_scale_astronomy_catalog_linker/notebooks/large_scale_astronomy_catalog_linker.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Filesystem mental model",
+        "Environment reproducibility",
+        "Failure surfaces"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_astronomy_catalog_linker.src.pipeline"
+    },
+    {
+      "id": "p040-de-l02-m01",
+      "title": "DE L02 mission for p040",
+      "summary": "Use project p040 as the anchor artifact for Data Engineering L02: Linux, Python, And Data Formats.",
+      "track": "data_engineering",
+      "level": "L02",
+      "project_id": "p040",
+      "notebook_path": "notebooks/tracks/data_engineering/L02/data_engineering_l02_linux_python_and_data_formats.ipynb",
+      "project_notebook": "projects/large_scale_log_compression_and_analytics/notebooks/large_scale_log_compression_and_analytics.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Serialization formats",
+        "Compression",
+        "Schema drift"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_log_compression_and_analytics.src.pipeline"
+    },
+    {
+      "id": "p041-de-l03-m01",
+      "title": "DE L03 mission for p041",
+      "summary": "Use project p041 as the anchor artifact for Data Engineering L03: Databases And Data Modeling.",
+      "track": "data_engineering",
+      "level": "L03",
+      "project_id": "p041",
+      "notebook_path": "notebooks/tracks/data_engineering/L03/data_engineering_l03_databases_and_data_modeling.ipynb",
+      "project_notebook": "projects/large_scale_recommendation_for_learning_paths/notebooks/large_scale_recommendation_for_learning_paths.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Normalization",
+        "Join integrity",
+        "Entity boundaries"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_recommendation_for_learning_paths.src.pipeline"
+    },
+    {
+      "id": "p049-de-l04-m01",
+      "title": "DE L04 mission for p049",
+      "summary": "Use project p049 as the anchor artifact for Data Engineering L04: Ingestion And Transformation.",
+      "track": "data_engineering",
+      "level": "L04",
+      "project_id": "p049",
+      "notebook_path": "notebooks/tracks/data_engineering/L04/data_engineering_l04_ingestion_and_transformation.ipynb",
+      "project_notebook": "projects/network_traffic_anomaly_detection/notebooks/network_traffic_anomaly_detection.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Raw-to-staging flow",
+        "Idempotency",
+        "Change capture"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.network_traffic_anomaly_detection.src.pipeline"
+    },
+    {
+      "id": "p055-de-l05-m01",
+      "title": "DE L05 mission for p055",
+      "summary": "Use project p055 as the anchor artifact for Data Engineering L05: Data Quality And Contracts.",
+      "track": "data_engineering",
+      "level": "L05",
+      "project_id": "p055",
+      "notebook_path": "notebooks/tracks/data_engineering/L05/data_engineering_l05_data_quality_and_contracts.ipynb",
+      "project_notebook": "projects/optical_experiment_noise_characterization/notebooks/optical_experiment_noise_characterization.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Null policy",
+        "Range checks",
+        "Schema contracts"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.optical_experiment_noise_characterization.src.pipeline"
+    },
+    {
+      "id": "p060-de-l06-m01",
+      "title": "DE L06 mission for p060",
+      "summary": "Use project p060 as the anchor artifact for Data Engineering L06: Orchestration And Batch Systems.",
+      "track": "data_engineering",
+      "level": "L06",
+      "project_id": "p060",
+      "notebook_path": "notebooks/tracks/data_engineering/L06/data_engineering_l06_orchestration_and_batch_systems.ipynb",
+      "project_notebook": "projects/plasma_experiment_parameter_inference/notebooks/plasma_experiment_parameter_inference.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "DAG logic",
+        "Retries",
+        "Backfills"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.plasma_experiment_parameter_inference.src.pipeline"
+    },
+    {
+      "id": "p066-de-l07-m01",
+      "title": "DE L07 mission for p066",
+      "summary": "Use project p066 as the anchor artifact for Data Engineering L07: Streaming And Event Systems.",
+      "track": "data_engineering",
+      "level": "L07",
+      "project_id": "p066",
+      "notebook_path": "notebooks/tracks/data_engineering/L07/data_engineering_l07_streaming_and_event_systems.ipynb",
+      "project_notebook": "projects/rare_disease_signal_mining/notebooks/rare_disease_signal_mining.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Watermarks",
+        "At-least-once tradeoffs",
+        "Stateful streams"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.rare_disease_signal_mining.src.pipeline"
+    },
+    {
+      "id": "p071-de-l08-m01",
+      "title": "DE L08 mission for p071",
+      "summary": "Use project p071 as the anchor artifact for Data Engineering L08: Distributed Data Systems.",
+      "track": "data_engineering",
+      "level": "L08",
+      "project_id": "p071",
+      "notebook_path": "notebooks/tracks/data_engineering/L08/data_engineering_l08_distributed_data_systems.ipynb",
+      "project_notebook": "projects/renewable_energy_mix_optimizer/notebooks/renewable_energy_mix_optimizer.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Sharding",
+        "Skew mitigation",
+        "Storage layout"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.renewable_energy_mix_optimizer.src.pipeline"
+    },
+    {
+      "id": "p078-de-l09-m01",
+      "title": "DE L09 mission for p078",
+      "summary": "Use project p078 as the anchor artifact for Data Engineering L09: Cloud Governance And Security.",
+      "track": "data_engineering",
+      "level": "L09",
+      "project_id": "p078",
+      "notebook_path": "notebooks/tracks/data_engineering/L09/data_engineering_l09_cloud_governance_and_security.ipynb",
+      "project_notebook": "projects/scientific_image_segmentation_benchmark/notebooks/scientific_image_segmentation_benchmark.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "IAM basics",
+        "Retention policy",
+        "Data classification"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.scientific_image_segmentation_benchmark.src.pipeline"
+    },
+    {
+      "id": "p084-de-l10-m01",
+      "title": "DE L10 mission for p084",
+      "summary": "Use project p084 as the anchor artifact for Data Engineering L10: Production Data Platform Capstone.",
+      "track": "data_engineering",
+      "level": "L10",
+      "project_id": "p084",
+      "notebook_path": "notebooks/tracks/data_engineering/L10/data_engineering_l10_production_data_platform_capstone.ipynb",
+      "project_notebook": "projects/smart_building_thermal_dynamics_model/notebooks/smart_building_thermal_dynamics_model.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Operational SLOs",
+        "Platform contracts",
+        "Migration plans"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.smart_building_thermal_dynamics_model.src.pipeline"
+    },
+    {
+      "id": "p034-mle-l01-m01",
+      "title": "MLE L01 mission for p034",
+      "summary": "Use project p034 as the anchor artifact for ML Engineering L01: Software Foundations.",
+      "track": "ml_engineering",
+      "level": "L01",
+      "project_id": "p034",
+      "notebook_path": "notebooks/tracks/ml_engineering/L01/ml_engineering_l01_software_foundations.ipynb",
+      "project_notebook": "projects/human_activity_recognition_from_wearables/notebooks/human_activity_recognition_from_wearables.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Python package boundaries",
+        "CLI execution",
+        "Determinism intuition"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.human_activity_recognition_from_wearables.src.pipeline"
+    },
+    {
+      "id": "p040-mle-l02-m01",
+      "title": "MLE L02 mission for p040",
+      "summary": "Use project p040 as the anchor artifact for ML Engineering L02: Python Packages And Testing.",
+      "track": "ml_engineering",
+      "level": "L02",
+      "project_id": "p040",
+      "notebook_path": "notebooks/tracks/ml_engineering/L02/ml_engineering_l02_python_packages_and_testing.ipynb",
+      "project_notebook": "projects/large_scale_log_compression_and_analytics/notebooks/large_scale_log_compression_and_analytics.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Unit tests",
+        "Integration seams",
+        "Refactoring pressure"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_log_compression_and_analytics.src.pipeline"
+    },
+    {
+      "id": "p041-mle-l03-m01",
+      "title": "MLE L03 mission for p041",
+      "summary": "Use project p041 as the anchor artifact for ML Engineering L03: ML Workflow Foundations.",
+      "track": "ml_engineering",
+      "level": "L03",
+      "project_id": "p041",
+      "notebook_path": "notebooks/tracks/ml_engineering/L03/ml_engineering_l03_ml_workflow_foundations.ipynb",
+      "project_notebook": "projects/large_scale_recommendation_for_learning_paths/notebooks/large_scale_recommendation_for_learning_paths.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Pipeline stages",
+        "Artifact naming",
+        "Re-run safety"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.large_scale_recommendation_for_learning_paths.src.pipeline"
+    },
+    {
+      "id": "p050-mle-l04-m01",
+      "title": "MLE L04 mission for p050",
+      "summary": "Use project p050 as the anchor artifact for ML Engineering L04: Reproducible Training Pipelines.",
+      "track": "ml_engineering",
+      "level": "L04",
+      "project_id": "p050",
+      "notebook_path": "notebooks/tracks/ml_engineering/L04/ml_engineering_l04_reproducible_training_pipelines.ipynb",
+      "project_notebook": "projects/neuron_spike_train_modeling/notebooks/neuron_spike_train_modeling.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Configuration surfaces",
+        "Artifact capture",
+        "Experiment traceability"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.neuron_spike_train_modeling.src.pipeline"
+    },
+    {
+      "id": "p059-mle-l05-m01",
+      "title": "MLE L05 mission for p059",
+      "summary": "Use project p059 as the anchor artifact for ML Engineering L05: Model Packaging And Serving.",
+      "track": "ml_engineering",
+      "level": "L05",
+      "project_id": "p059",
+      "notebook_path": "notebooks/tracks/ml_engineering/L05/ml_engineering_l05_model_packaging_and_serving.ipynb",
+      "project_notebook": "projects/physics_informed_weather_nowcasting/notebooks/physics_informed_weather_nowcasting.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Input schemas",
+        "Prediction interfaces",
+        "Cold-start costs"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.physics_informed_weather_nowcasting.src.pipeline"
+    },
+    {
+      "id": "p068-mle-l06-m01",
+      "title": "MLE L06 mission for p068",
+      "summary": "Use project p068 as the anchor artifact for ML Engineering L06: Experiment Tracking And Registry.",
+      "track": "ml_engineering",
+      "level": "L06",
+      "project_id": "p068",
+      "notebook_path": "notebooks/tracks/ml_engineering/L06/ml_engineering_l06_experiment_tracking_and_registry.ipynb",
+      "project_notebook": "projects/recommender_system_for_scientific_papers/notebooks/recommender_system_for_scientific_papers.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Run lineage",
+        "Model registry semantics",
+        "Promotion criteria"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.recommender_system_for_scientific_papers.src.pipeline"
+    },
+    {
+      "id": "p076-mle-l07-m01",
+      "title": "MLE L07 mission for p076",
+      "summary": "Use project p076 as the anchor artifact for ML Engineering L07: CI/CD And Infrastructure.",
+      "track": "ml_engineering",
+      "level": "L07",
+      "project_id": "p076",
+      "notebook_path": "notebooks/tracks/ml_engineering/L07/ml_engineering_l07_ci_cd_and_infrastructure.ipynb",
+      "project_notebook": "projects/scientific_data_platform_for_multi_modal_experiments/notebooks/scientific_data_platform_for_multi_modal_experiments.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Build validation",
+        "Release gates",
+        "Rollback logic"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.scientific_data_platform_for_multi_modal_experiments.src.pipeline"
+    },
+    {
+      "id": "p082-mle-l08-m01",
+      "title": "MLE L08 mission for p082",
+      "summary": "Use project p082 as the anchor artifact for ML Engineering L08: Monitoring, Drift, And Reliability.",
+      "track": "ml_engineering",
+      "level": "L08",
+      "project_id": "p082",
+      "notebook_path": "notebooks/tracks/ml_engineering/L08/ml_engineering_l08_monitoring_drift_and_reliability.ipynb",
+      "project_notebook": "projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Data drift",
+        "Concept drift",
+        "Alert fatigue"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.sensor_drift_detection.src.pipeline"
+    },
+    {
+      "id": "p090-mle-l09-m01",
+      "title": "MLE L09 mission for p090",
+      "summary": "Use project p090 as the anchor artifact for ML Engineering L09: Scalable ML And Responsible AI.",
+      "track": "ml_engineering",
+      "level": "L09",
+      "project_id": "p090",
+      "notebook_path": "notebooks/tracks/ml_engineering/L09/ml_engineering_l09_scalable_ml_and_responsible_ai.ipynb",
+      "project_notebook": "projects/sports_biomechanics_motion_analyzer/notebooks/sports_biomechanics_motion_analyzer.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Resource limits",
+        "Bias review",
+        "Operational risk"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.sports_biomechanics_motion_analyzer.src.pipeline"
+    },
+    {
+      "id": "p099-mle-l10-m01",
+      "title": "MLE L10 mission for p099",
+      "summary": "Use project p099 as the anchor artifact for ML Engineering L10: Production ML Platform Capstone.",
+      "track": "ml_engineering",
+      "level": "L10",
+      "project_id": "p099",
+      "notebook_path": "notebooks/tracks/ml_engineering/L10/ml_engineering_l10_production_ml_platform_capstone.ipynb",
+      "project_notebook": "projects/wildfire_spread_prediction/notebooks/wildfire_spread_prediction.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Service boundaries",
+        "Risk controls",
+        "Incident response"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.wildfire_spread_prediction.src.pipeline"
+    },
+    {
+      "id": "p029-sc-l01-m01",
+      "title": "SC L01 mission for p029",
+      "summary": "Use project p029 as the anchor artifact for Scientific Computing L01: Mathematical Measurement.",
+      "track": "scientific_computing",
+      "level": "L01",
+      "project_id": "p029",
+      "notebook_path": "notebooks/tracks/scientific_computing/L01/scientific_computing_l01_mathematical_measurement.ipynb",
+      "project_notebook": "projects/gravitational_orbit_simulator/notebooks/gravitational_orbit_simulator.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "State variables",
+        "Units",
+        "Approximation error intuition"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.gravitational_orbit_simulator.src.pipeline"
+    },
+    {
+      "id": "p021-sc-l02-m01",
+      "title": "SC L02 mission for p021",
+      "summary": "Use project p021 as the anchor artifact for Scientific Computing L02: Algebra, Units, And Numerical Python.",
+      "track": "scientific_computing",
+      "level": "L02",
+      "project_id": "p021",
+      "notebook_path": "notebooks/tracks/scientific_computing/L02/scientific_computing_l02_algebra_units_and_numerical_python.ipynb",
+      "project_notebook": "projects/epidemiological_spread_simulation/notebooks/epidemiological_spread_simulation.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Dimensional analysis",
+        "Vector spaces",
+        "Broadcasting"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.epidemiological_spread_simulation.src.pipeline"
+    },
+    {
+      "id": "p022-sc-l03-m01",
+      "title": "SC L03 mission for p022",
+      "summary": "Use project p022 as the anchor artifact for Scientific Computing L03: Calculus And Linear Algebra.",
+      "track": "scientific_computing",
+      "level": "L03",
+      "project_id": "p022",
+      "notebook_path": "notebooks/tracks/scientific_computing/L03/scientific_computing_l03_calculus_and_linear_algebra.ipynb",
+      "project_notebook": "projects/experimental_physics_outlier_lab/notebooks/experimental_physics_outlier_lab.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Gradients",
+        "Eigenstructure",
+        "Conditioning"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.experimental_physics_outlier_lab.src.pipeline"
+    },
+    {
+      "id": "p027-sc-l04-m01",
+      "title": "SC L04 mission for p027",
+      "summary": "Use project p027 as the anchor artifact for Scientific Computing L04: Differential Equations And Numerical Error.",
+      "track": "scientific_computing",
+      "level": "L04",
+      "project_id": "p027",
+      "notebook_path": "notebooks/tracks/scientific_computing/L04/scientific_computing_l04_differential_equations_and_numerical_error.ipynb",
+      "project_notebook": "projects/fluid_flow_surrogate_model/notebooks/fluid_flow_surrogate_model.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Euler stepping",
+        "Stability",
+        "Convergence"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.fluid_flow_surrogate_model.src.pipeline"
+    },
+    {
+      "id": "p030-sc-l05-m01",
+      "title": "SC L05 mission for p030",
+      "summary": "Use project p030 as the anchor artifact for Scientific Computing L05: Simulation And Dynamical Systems.",
+      "track": "scientific_computing",
+      "level": "L05",
+      "project_id": "p030",
+      "notebook_path": "notebooks/tracks/scientific_computing/L05/scientific_computing_l05_simulation_and_dynamical_systems.ipynb",
+      "project_notebook": "projects/gravitational_wave_signal_search/notebooks/gravitational_wave_signal_search.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "State evolution",
+        "Conservation laws",
+        "Phase portraits"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.gravitational_wave_signal_search.src.pipeline"
+    },
+    {
+      "id": "p044-sc-l06-m01",
+      "title": "SC L06 mission for p044",
+      "summary": "Use project p044 as the anchor artifact for Scientific Computing L06: Monte Carlo And Stochastic Processes.",
+      "track": "scientific_computing",
+      "level": "L06",
+      "project_id": "p044",
+      "notebook_path": "notebooks/tracks/scientific_computing/L06/scientific_computing_l06_monte_carlo_and_stochastic_processes.ipynb",
+      "project_notebook": "projects/magnetic_field_sensor_reconstruction/notebooks/magnetic_field_sensor_reconstruction.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Sampling",
+        "Variance reduction",
+        "Random walks"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.magnetic_field_sensor_reconstruction.src.pipeline"
+    },
+    {
+      "id": "p052-sc-l07-m01",
+      "title": "SC L07 mission for p052",
+      "summary": "Use project p052 as the anchor artifact for Scientific Computing L07: Optimization And Inverse Problems.",
+      "track": "scientific_computing",
+      "level": "L07",
+      "project_id": "p052",
+      "notebook_path": "notebooks/tracks/scientific_computing/L07/scientific_computing_l07_optimization_and_inverse_problems.ipynb",
+      "project_notebook": "projects/ocean_buoy_wave_energy_estimator/notebooks/ocean_buoy_wave_energy_estimator.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Objective functions",
+        "Regularization",
+        "Identifiability"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.ocean_buoy_wave_energy_estimator.src.pipeline"
+    },
+    {
+      "id": "p067-sc-l08-m01",
+      "title": "SC L08 mission for p067",
+      "summary": "Use project p067 as the anchor artifact for Scientific Computing L08: High-Performance Computing.",
+      "track": "scientific_computing",
+      "level": "L08",
+      "project_id": "p067",
+      "notebook_path": "notebooks/tracks/scientific_computing/L08/scientific_computing_l08_high_performance_computing.ipynb",
+      "project_notebook": "projects/real_time_manufacturing_yield_dashboard/notebooks/real_time_manufacturing_yield_dashboard.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Memory bandwidth",
+        "Parallel decomposition",
+        "Profiling"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.real_time_manufacturing_yield_dashboard.src.pipeline"
+    },
+    {
+      "id": "p088-sc-l09-m01",
+      "title": "SC L09 mission for p088",
+      "summary": "Use project p088 as the anchor artifact for Scientific Computing L09: Multiphysics, Surrogates, And Data Assimilation.",
+      "track": "scientific_computing",
+      "level": "L09",
+      "project_id": "p088",
+      "notebook_path": "notebooks/tracks/scientific_computing/L09/scientific_computing_l09_multiphysics_surrogates_and_data_assimilation.ipynb",
+      "project_notebook": "projects/solar_irradiance_forecasting/notebooks/solar_irradiance_forecasting.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "State estimation",
+        "Hybrid modeling",
+        "Assimilation loops"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.solar_irradiance_forecasting.src.pipeline"
+    },
+    {
+      "id": "p100-sc-l10-m01",
+      "title": "SC L10 mission for p100",
+      "summary": "Use project p100 as the anchor artifact for Scientific Computing L10: Reproducible Computational Science Capstone.",
+      "track": "scientific_computing",
+      "level": "L10",
+      "project_id": "p100",
+      "notebook_path": "notebooks/tracks/scientific_computing/L10/scientific_computing_l10_reproducible_computational_science_capstone.ipynb",
+      "project_notebook": "projects/wind_turbine_failure_early_warning_system/notebooks/wind_turbine_failure_early_warning_system.ipynb",
+      "evidence": [
+        "State the question, observation unit, and expected output.",
+        "Run the notebook or command surface declared by the mission.",
+        "Write limitations, assumptions, and next-step extensions."
+      ],
+      "competencies": [
+        "Reproducible experiments",
+        "Validation against theory",
+        "Scientific reporting"
+      ],
+      "command": "PYTHONPATH=src:. uv run python -m projects.wind_turbine_failure_early_warning_system.src.pipeline"
+    }
+  ]
+}

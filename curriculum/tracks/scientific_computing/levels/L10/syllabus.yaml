@@ -1,0 +1,50 @@
+{
+  "track": "scientific_computing",
+  "level": "L10",
+  "level_number": 10,
+  "title": "Reproducible Computational Science Capstone",
+  "summary": "Write and defend a computational study with numerical and scientific integrity.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "scientific_computing:L09"
+  ],
+  "competencies": [
+    "Reproducible experiments",
+    "Validation against theory",
+    "Scientific reporting"
+  ],
+  "mission_ids": [
+    "p100-sc-l10-m01"
+  ],
+  "project_ids": [
+    "p100"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L10/scientific_computing_l10_reproducible_computational_science_capstone.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L10."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/wind_turbine_failure_early_warning_system/notebooks/wind_turbine_failure_early_warning_system.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.wind_turbine_failure_early_warning_system.src.pipeline"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "track": "data_engineering",
+  "level": "L01",
+  "level_number": 1,
+  "title": "Computing Foundations",
+  "summary": "Understand files, directories, reproducible environments, and command execution as system primitives.",
+  "status": "implemented",
+  "estimated_effort_hours": 8,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [],
+  "competencies": [
+    "Filesystem mental model",
+    "Environment reproducibility",
+    "Failure surfaces"
+  ],
+  "mission_ids": [
+    "p039-de-l01-m01"
+  ],
+  "project_ids": [
+    "p039"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L01/data_engineering_l01_computing_foundations.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L01."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/large_scale_astronomy_catalog_linker/notebooks/large_scale_astronomy_catalog_linker.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.large_scale_astronomy_catalog_linker.src.pipeline"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L08",
+  "level_number": 8,
+  "title": "Distributed Data Systems",
+  "summary": "Design data movement under partitioning, parallelism, and skew.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L07"
+  ],
+  "competencies": [
+    "Sharding",
+    "Skew mitigation",
+    "Storage layout"
+  ],
+  "mission_ids": [
+    "p071-de-l08-m01"
+  ],
+  "project_ids": [
+    "p071"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L08/data_engineering_l08_distributed_data_systems.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L08."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/renewable_energy_mix_optimizer/notebooks/renewable_energy_mix_optimizer.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.renewable_energy_mix_optimizer.src.pipeline"
+  }
+}

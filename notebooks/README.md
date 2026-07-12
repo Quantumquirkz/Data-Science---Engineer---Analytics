@@ -1,12 +1,7 @@
-# Repository-Level Notebooks
+# Shared Notebooks
 
-This directory is for shared or cross-project notebooks that do not belong to a
-single project.
+This directory holds repository-level teaching notebooks that sit above any single project.
 
-## Layout
-
-- `exploration/` - broad exploratory analyses.
-- `experiments/` - cross-project experiments and comparisons.
-- `reports/` - notebook-based reporting outputs.
-
-Project-local notebooks remain the default for self-contained project work.
+- `foundations/` contains cross-track onboarding notebooks.
+- `tracks/` contains one central notebook for every track level, `L01` through `L10`.
+- Project-specific notebooks remain under `projects/<slug>/notebooks/`.

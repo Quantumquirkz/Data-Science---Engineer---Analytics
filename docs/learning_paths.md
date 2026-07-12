@@ -1,8 +1,6 @@
 # Learning Paths
 
-The repository teaches through role-based paths that point to project READMEs
-and notebooks. Projects are not duplicated across tracks; the registry maps
-stable IDs to slug-based folders.
+The repository now teaches through **five independent ten-level tracks** plus a shared mission graph.
 
 ## Tracks
 
@@ -12,25 +10,18 @@ stable IDs to slug-based folders.
 - [ML Engineering](../curriculum/tracks/ml_engineering/README.md)
 - [Scientific Computing](../curriculum/tracks/scientific_computing/README.md)
 
-## Foundations First
+## Framework
 
+- [Curriculum Framework](../curriculum/framework/README.md)
+- [Learning Pathways](../curriculum/pathways/README.md)
 - [Foundational Body Of Knowledge](../curriculum/foundational_body_of_knowledge.md)
 - [Study Plan](../curriculum/study_plan.md)
 - [Bibliography And Reference Spine](../curriculum/bibliography.md)
 
-## Catalog Views
+## How To Use The System
 
-- [By track](catalog/by_track.md)
-- [By domain](catalog/by_domain.md)
-- [By difficulty](catalog/by_difficulty.md)
-- [By artifact](catalog/by_artifact.md)
-- [By tool or skill](catalog/by_tool.md)
-- [By template](catalog/by_template.md)
-
-## How To Study A Project
-
-1. Open the track README that matches the role you are practicing.
-2. Choose a project ID and open its project README.
-3. Run the declared command from `project.yaml`.
-4. Open the project notebook for the narrative walkthrough.
-5. Compare outputs, assumptions, limitations, and possible extensions.
+1. Choose one track or one project world.
+2. Start at `L01` if you are new to the field.
+3. Use the level README, then the linked notebook.
+4. Open the mission anchor and inspect the matching project.
+5. Record evidence locally without grades or platform lock-in.

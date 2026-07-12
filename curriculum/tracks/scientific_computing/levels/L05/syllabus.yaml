@@ -1,0 +1,50 @@
+{
+  "track": "scientific_computing",
+  "level": "L05",
+  "level_number": 5,
+  "title": "Simulation And Dynamical Systems",
+  "summary": "Model interacting systems and interpret phase behavior.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "scientific_computing:L04"
+  ],
+  "competencies": [
+    "State evolution",
+    "Conservation laws",
+    "Phase portraits"
+  ],
+  "mission_ids": [
+    "p030-sc-l05-m01"
+  ],
+  "project_ids": [
+    "p030"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L05/scientific_computing_l05_simulation_and_dynamical_systems.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L05."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/gravitational_wave_signal_search/notebooks/gravitational_wave_signal_search.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.gravitational_wave_signal_search.src.pipeline"
+  }
+}

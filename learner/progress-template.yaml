@@ -1,0 +1,14 @@
+learner_handle: example_local_handle
+status_scale:
+  - not_started
+  - exploring
+  - practiced
+  - demonstrated
+  - extended
+tracks:
+  data_analytics:
+    L01: exploring
+  data_science:
+    L01: not_started
+notes:
+  - "Use this file locally if progress journaling is useful."

@@ -1,0 +1,48 @@
+{
+  "track": "ml_engineering",
+  "level": "L01",
+  "level_number": 1,
+  "title": "Software Foundations",
+  "summary": "Treat scripts, modules, tests, and environments as first-class ML assets.",
+  "status": "implemented",
+  "estimated_effort_hours": 8,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [],
+  "competencies": [
+    "Python package boundaries",
+    "CLI execution",
+    "Determinism intuition"
+  ],
+  "mission_ids": [
+    "p034-mle-l01-m01"
+  ],
+  "project_ids": [
+    "p034"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/ml_engineering/L01/ml_engineering_l01_software_foundations.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in ML Engineering.",
+    "Describe one failure mode that can invalidate ML Engineering conclusions at L01."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/human_activity_recognition_from_wearables/notebooks/human_activity_recognition_from_wearables.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.human_activity_recognition_from_wearables.src.pipeline"
+  }
+}

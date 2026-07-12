@@ -1,0 +1,50 @@
+{
+  "track": "ml_engineering",
+  "level": "L06",
+  "level_number": 6,
+  "title": "Experiment Tracking And Registry",
+  "summary": "Version runs, metrics, and models without losing comparability.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "ml_engineering:L05"
+  ],
+  "competencies": [
+    "Run lineage",
+    "Model registry semantics",
+    "Promotion criteria"
+  ],
+  "mission_ids": [
+    "p068-mle-l06-m01"
+  ],
+  "project_ids": [
+    "p068"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/ml_engineering/L06/ml_engineering_l06_experiment_tracking_and_registry.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in ML Engineering.",
+    "Describe one failure mode that can invalidate ML Engineering conclusions at L06."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/recommender_system_for_scientific_papers/notebooks/recommender_system_for_scientific_papers.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.recommender_system_for_scientific_papers.src.pipeline"
+  }
+}

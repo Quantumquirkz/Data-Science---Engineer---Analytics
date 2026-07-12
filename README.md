@@ -1,6 +1,6 @@
 # Data Science — Engineer — Analytics
 
-A Python workspace for **data analytics**, **data science**, **data engineering**, **ML engineering**, and **scientific computing**: exploratory analysis, reproducible modeling, scalable tabular processing, experimentation, and shareable demos.
+A Python workspace for **data analytics**, **data science**, **data engineering**, **ML engineering**, and **scientific computing**: exploratory analysis, reproducible modeling, scalable tabular processing, experimentation, shareable demos, and a teaching-first open curriculum with 10 levels per discipline.
 
 ## About this repository
 
@@ -52,11 +52,13 @@ flowchart TB
   env --> sharedCore
 ```
 
-**`curriculum/`** maps role-based learning tracks to the 100 projects. **`labs/`** holds course labs and workshops. **`projects/`** holds portfolio-style work with stable metadata IDs `p001`-`p100` while preserving slug-based paths. **`templates/`** contains role-specific project templates. **`src/data_intelligence_engineering/`** holds repository-wide shared infrastructure. Supporting material lives in **`docs/`**, while top-level **`data/`**, **`models/`**, **`reports/`**, and **`notebooks/`** define shared artifact lifecycle standards.
+**`curriculum/`** maps role-based learning tracks to the 100 projects and now exposes a game-like, self-paced `L01`-`L10` progression for each discipline. **`labs/`** holds course labs and workshops. **`projects/`** holds portfolio-style work with stable metadata IDs `p001`-`p100` while preserving slug-based paths. **`templates/`** contains role-specific project templates. **`src/data_intelligence_engineering/`** holds repository-wide shared infrastructure. Supporting material lives in **`docs/`**, while top-level **`data/`**, **`models/`**, **`reports/`**, and **`notebooks/`** define shared artifact lifecycle standards.
 
 ## Repository layout
 
-- **`curriculum/`** — Role-based learning paths and reusable modules for Data Analytics, Data Science, Data Engineering, ML Engineering, and Scientific Computing.
+- **`curriculum/`** — Role-based learning paths, framework docs, mission registry, and `L01`-`L10` level progression for Data Analytics, Data Science, Data Engineering, ML Engineering, and Scientific Computing.
+- **`curriculum/framework/`** — Teaching contract, no-grade evidence model, and mission-graph design.
+- **`curriculum/pathways/`** — Study modes such as role-first, foundation-first, mission-first, and capstone-first.
 - **`labs/`** — Course lab notebooks and related assets (statistics, Gradio, pandas, etc.).
 - **`labs/courses/`** — Stable aliases for the lab sequence, preserved alongside the historical `Lab1`, `Lab2`, `Lab3`, and `Lab5` paths during migration.
 - **`labs/workshops/`** — Topic-grouped workshop material; `Workshops/` remains as a compatibility surface while paths transition.
@@ -75,6 +77,7 @@ flowchart TB
 - **`tests/`** — Unit, integration, and smoke checks for the shared core and selected projects.
 - **`configs/`** — Repository defaults, logging, project grouping metadata, and the allowed `project.yaml` schema values.
 - **`references/`** — Shared notes for datasets, papers, and glossaries.
+- **`learner/`** — Optional local progress and reflection templates for self-paced study.
 - **`docs/project_catalog.md`** and **`docs/catalog/`** — Generated metadata-backed catalog views by track, domain, difficulty, artifact, and template.
 - **`docs/PROJECTS.md`** — Original project idea catalog and supporting reference material.
 - **`pyproject.toml`** — Project metadata and Python dependencies (managed with **uv**).
@@ -153,6 +156,23 @@ PYTHONPATH=src:. uv run python scripts/validate_project_structure.py
 PYTHONPATH=src:. uv run python scripts/generate_project_catalog.py --check
 ```
 
+## Learning system
+
+The repository now includes a teaching-first curriculum designed for open-source, self-paced study:
+
+- Five independent tracks: Data Analytics, Data Science, Data Engineering, ML Engineering, and Scientific Computing.
+- Ten levels per track: `L01` through `L10`.
+- Shared project worlds: one project can support different missions across multiple tracks.
+- No grades or centralized progress system: learners collect local evidence instead.
+- Canonical runtime surfaces: `uv` locally and Colab for lightweight notebook use.
+
+Start here:
+
+- [Curriculum overview](curriculum/README.md)
+- [Curriculum framework](curriculum/framework/README.md)
+- [Learning pathways](curriculum/pathways/README.md)
+- [Learning paths index](docs/learning_paths.md)
+
 ## Notebooks and demos
 
 For interactive work, open **JupyterLab** from the project environment:
@@ -162,6 +182,16 @@ uv run jupyter lab
 ```
 
 Then open **`labs/Lab1/Lab1_Gradio.ipynb`** or **`labs/Lab2/Lab2_EstadisticaPandas.ipynb`** for course labs, or explore project notebooks such as **`projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb`** and **`projects/seismic_signal_classification/notebooks/seismic_signal_classification.ipynb`**. Individual notebooks may launch Gradio apps or other interfaces as described in their own cells.
+
+For the central teaching notebooks, begin with the foundation notebook or the
+L01 notebook for the track you want to study:
+
+- `notebooks/foundations/foundations_orientation.ipynb`
+- `notebooks/tracks/data_analytics/L01/data_analytics_l01_data_literacy.ipynb`
+- `notebooks/tracks/data_science/L01/data_science_l01_scientific_questions.ipynb`
+- `notebooks/tracks/data_engineering/L01/data_engineering_l01_computing_foundations.ipynb`
+- `notebooks/tracks/ml_engineering/L01/ml_engineering_l01_software_foundations.ipynb`
+- `notebooks/tracks/scientific_computing/L01/scientific_computing_l01_mathematical_measurement.ipynb`
 
 For architecture validation and lightweight compatibility checks:
 

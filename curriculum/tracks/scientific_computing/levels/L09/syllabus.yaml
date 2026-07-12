@@ -1,0 +1,50 @@
+{
+  "track": "scientific_computing",
+  "level": "L09",
+  "level_number": 9,
+  "title": "Multiphysics, Surrogates, And Data Assimilation",
+  "summary": "Blend simulation, statistical updates, and learned surrogates.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "scientific_computing:L08"
+  ],
+  "competencies": [
+    "State estimation",
+    "Hybrid modeling",
+    "Assimilation loops"
+  ],
+  "mission_ids": [
+    "p088-sc-l09-m01"
+  ],
+  "project_ids": [
+    "p088"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L09/scientific_computing_l09_multiphysics_surrogates_and_data_assimilation.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L09."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/solar_irradiance_forecasting/notebooks/solar_irradiance_forecasting.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.solar_irradiance_forecasting.src.pipeline"
+  }
+}

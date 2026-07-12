@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L07",
+  "level_number": 7,
+  "title": "Forecasting And Decision Support",
+  "summary": "Turn historical signals into scenario-aware planning metrics.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L06"
+  ],
+  "competencies": [
+    "Lead time",
+    "Forecast horizon",
+    "Cost of error"
+  ],
+  "mission_ids": [
+    "p054-da-l07-m01"
+  ],
+  "project_ids": [
+    "p054"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L07/data_analytics_l07_forecasting_and_decision_support.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L07."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/online_experiment_bayesian_analyzer/notebooks/online_experiment_bayesian_analyzer.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.online_experiment_bayesian_analyzer.src.pipeline"
+  }
+}

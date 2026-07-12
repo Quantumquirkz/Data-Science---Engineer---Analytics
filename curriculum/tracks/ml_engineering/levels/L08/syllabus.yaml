@@ -1,0 +1,50 @@
+{
+  "track": "ml_engineering",
+  "level": "L08",
+  "level_number": 8,
+  "title": "Monitoring, Drift, And Reliability",
+  "summary": "Detect when a production model or pipeline becomes misleading.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "ml_engineering:L07"
+  ],
+  "competencies": [
+    "Data drift",
+    "Concept drift",
+    "Alert fatigue"
+  ],
+  "mission_ids": [
+    "p082-mle-l08-m01"
+  ],
+  "project_ids": [
+    "p082"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/ml_engineering/L08/ml_engineering_l08_monitoring_drift_and_reliability.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in ML Engineering.",
+    "Describe one failure mode that can invalidate ML Engineering conclusions at L08."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/sensor_drift_detection/notebooks/sensor_drift_detection.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.sensor_drift_detection.src.pipeline"
+  }
+}

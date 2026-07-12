@@ -2,20 +2,24 @@
 
 The repository follows a teaching-first portfolio architecture. It is designed
 to teach Data Analytics, Data Science, Data Engineering, ML Engineering, and
-Scientific Computing through 100 self-contained projects.
+Scientific Computing through 100 self-contained projects plus five independent
+`L01`-`L10` learning tracks.
 
 ## Architecture Model
 
 ```mermaid
 flowchart TB
-    curriculum["curriculum/<br/>tracks and modules"]
+    curriculum["curriculum/<br/>tracks, levels, framework"]
     projects["projects/<br/>100 slug-based project folders"]
     registry["projects/registry.yaml<br/>project.yaml files"]
+    missions["curriculum/missions/mission_registry.yaml"]
     core["src/data_intelligence_engineering/<br/>shared infrastructure"]
     artifacts["data models reports notebooks<br/>artifact lifecycle"]
     docs["docs/<br/>generated catalogs and guides"]
 
     curriculum --> registry
+    curriculum --> missions
+    missions --> registry
     registry --> projects
     core --> registry
     core --> projects
@@ -62,8 +66,10 @@ Tracks:
 - ML Engineering
 - Scientific Computing
 
-Modules organize learning progression from foundations through capstone
-systems.
+Each track has 10 levels. The current implementation establishes the full
+directory contract for `L01`-`L10` and provides central L01 notebooks for every
+track. Mission definitions live in `curriculum/missions/mission_registry.yaml`
+and connect level objectives to project IDs.
 
 ## Template Families
 

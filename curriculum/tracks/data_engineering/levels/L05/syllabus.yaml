@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L05",
+  "level_number": 5,
+  "title": "Data Quality And Contracts",
+  "summary": "Express data validity as contracts, tests, and observability.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L04"
+  ],
+  "competencies": [
+    "Null policy",
+    "Range checks",
+    "Schema contracts"
+  ],
+  "mission_ids": [
+    "p055-de-l05-m01"
+  ],
+  "project_ids": [
+    "p055"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L05/data_engineering_l05_data_quality_and_contracts.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L05."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/optical_experiment_noise_characterization/notebooks/optical_experiment_noise_characterization.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.optical_experiment_noise_characterization.src.pipeline"
+  }
+}

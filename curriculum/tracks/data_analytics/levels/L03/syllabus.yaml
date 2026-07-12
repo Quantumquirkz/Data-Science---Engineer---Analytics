@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L03",
+  "level_number": 3,
+  "title": "Descriptive Analytics",
+  "summary": "Summarize central tendency, spread, segmentation, and anomalies.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L02"
+  ],
+  "competencies": [
+    "Distributions",
+    "Percentiles",
+    "Cohorts"
+  ],
+  "mission_ids": [
+    "p019-da-l03-m01"
+  ],
+  "project_ids": [
+    "p019"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L03/data_analytics_l03_descriptive_analytics.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L03."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/energy_market_scenario_generator/notebooks/energy_market_scenario_generator.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.energy_market_scenario_generator.src.pipeline"
+  }
+}

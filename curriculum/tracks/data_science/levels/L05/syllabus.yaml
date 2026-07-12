@@ -1,0 +1,50 @@
+{
+  "track": "data_science",
+  "level": "L05",
+  "level_number": 5,
+  "title": "Supervised Machine Learning",
+  "summary": "Build baselines, train models, and evaluate generalization.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_science:L04"
+  ],
+  "competencies": [
+    "Feature-target split",
+    "Metrics",
+    "Overfitting"
+  ],
+  "mission_ids": [
+    "p028-ds-l05-m01"
+  ],
+  "project_ids": [
+    "p028"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_science/L05/data_science_l05_supervised_machine_learning.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Science.",
+    "Describe one failure mode that can invalidate Data Science conclusions at L05."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/fraud_detection_in_scientific_grant_data/notebooks/fraud_detection_in_scientific_grant_data.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.fraud_detection_in_scientific_grant_data.src.pipeline"
+  }
+}

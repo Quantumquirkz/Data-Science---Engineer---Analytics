@@ -1,0 +1,50 @@
+{
+  "track": "data_science",
+  "level": "L08",
+  "level_number": 8,
+  "title": "Causal, Bayesian, And Uncertainty Modeling",
+  "summary": "Represent beliefs, uncertainty, and interventions explicitly.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_science:L07"
+  ],
+  "competencies": [
+    "Bayesian updating",
+    "Posterior reasoning",
+    "Causal diagrams"
+  ],
+  "mission_ids": [
+    "p037-ds-l08-m01"
+  ],
+  "project_ids": [
+    "p037"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_science/L08/data_science_l08_causal_bayesian_and_uncertainty_modeling.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Science.",
+    "Describe one failure mode that can invalidate Data Science conclusions at L08."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/hydrological_flood_risk_forecasting/notebooks/hydrological_flood_risk_forecasting.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.hydrological_flood_risk_forecasting.src.pipeline"
+  }
+}

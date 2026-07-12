@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L09",
+  "level_number": 9,
+  "title": "Cloud Governance And Security",
+  "summary": "Treat access control, cost, lineage, and compliance as core architecture.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L08"
+  ],
+  "competencies": [
+    "IAM basics",
+    "Retention policy",
+    "Data classification"
+  ],
+  "mission_ids": [
+    "p078-de-l09-m01"
+  ],
+  "project_ids": [
+    "p078"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L09/data_engineering_l09_cloud_governance_and_security.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L09."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/scientific_image_segmentation_benchmark/notebooks/scientific_image_segmentation_benchmark.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.scientific_image_segmentation_benchmark.src.pipeline"
+  }
+}

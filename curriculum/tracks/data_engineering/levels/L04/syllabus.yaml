@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L04",
+  "level_number": 4,
+  "title": "Ingestion And Transformation",
+  "summary": "Construct explicit ingestion and transformation stages.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L03"
+  ],
+  "competencies": [
+    "Raw-to-staging flow",
+    "Idempotency",
+    "Change capture"
+  ],
+  "mission_ids": [
+    "p049-de-l04-m01"
+  ],
+  "project_ids": [
+    "p049"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L04/data_engineering_l04_ingestion_and_transformation.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L04."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/network_traffic_anomaly_detection/notebooks/network_traffic_anomaly_detection.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.network_traffic_anomaly_detection.src.pipeline"
+  }
+}

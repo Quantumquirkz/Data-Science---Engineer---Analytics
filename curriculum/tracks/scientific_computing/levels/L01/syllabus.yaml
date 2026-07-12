@@ -1,0 +1,48 @@
+{
+  "track": "scientific_computing",
+  "level": "L01",
+  "level_number": 1,
+  "title": "Mathematical Measurement",
+  "summary": "Start from quantities, units, coordinates, and approximation as the basis of simulation.",
+  "status": "implemented",
+  "estimated_effort_hours": 8,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [],
+  "competencies": [
+    "State variables",
+    "Units",
+    "Approximation error intuition"
+  ],
+  "mission_ids": [
+    "p029-sc-l01-m01"
+  ],
+  "project_ids": [
+    "p029"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L01/scientific_computing_l01_mathematical_measurement.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L01."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/gravitational_orbit_simulator/notebooks/gravitational_orbit_simulator.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.gravitational_orbit_simulator.src.pipeline"
+  }
+}

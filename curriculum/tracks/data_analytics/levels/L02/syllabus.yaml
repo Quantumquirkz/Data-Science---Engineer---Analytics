@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L02",
+  "level_number": 2,
+  "title": "Spreadsheets And SQL Tables",
+  "summary": "Move from manual tabulation to reproducible filtering, grouping, and joins.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L01"
+  ],
+  "competencies": [
+    "Tabular schemas",
+    "Primary keys",
+    "Aggregation semantics"
+  ],
+  "mission_ids": [
+    "p018-da-l02-m01"
+  ],
+  "project_ids": [
+    "p018"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L02/data_analytics_l02_spreadsheets_and_sql_tables.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L02."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/energy_consumption_segmentation/notebooks/energy_consumption_segmentation.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.energy_consumption_segmentation.src.pipeline"
+  }
+}

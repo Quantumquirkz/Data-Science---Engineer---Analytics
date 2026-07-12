@@ -19,6 +19,10 @@ scientific modeling, machine learning, and analytical reporting into a single
 workspace. Its value is not only in isolated examples, but in the repeated
 pattern of turning a data problem into a reproducible system.
 
+It also functions as an open curriculum: five role-based tracks now expose a
+game-like but non-graded `L01`-`L10` progression that maps foundational theory,
+notebooks, and project missions into a self-paced learning system.
+
 ## Repository Identity
 
 This repository should be understood as a multidisciplinary data intelligence
@@ -46,6 +50,8 @@ The repository is useful for:
 - Recruiters or technical reviewers who need evidence of applied breadth.
 - Collaborators who want a modular structure for experiments and demos.
 - AI coding agents that need repository-level context before proposing changes.
+- Open-source learners who want a structured route from zero technical
+  knowledge to professional project work.
 
 ## Design Philosophy
 

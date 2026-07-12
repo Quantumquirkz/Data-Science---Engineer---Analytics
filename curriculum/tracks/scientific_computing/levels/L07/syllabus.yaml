@@ -1,0 +1,50 @@
+{
+  "track": "scientific_computing",
+  "level": "L07",
+  "level_number": 7,
+  "title": "Optimization And Inverse Problems",
+  "summary": "Infer hidden parameters or states from noisy evidence.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "scientific_computing:L06"
+  ],
+  "competencies": [
+    "Objective functions",
+    "Regularization",
+    "Identifiability"
+  ],
+  "mission_ids": [
+    "p052-sc-l07-m01"
+  ],
+  "project_ids": [
+    "p052"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/scientific_computing/L07/scientific_computing_l07_optimization_and_inverse_problems.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Scientific Computing.",
+    "Describe one failure mode that can invalidate Scientific Computing conclusions at L07."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/ocean_buoy_wave_energy_estimator/notebooks/ocean_buoy_wave_energy_estimator.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.ocean_buoy_wave_energy_estimator.src.pipeline"
+  }
+}

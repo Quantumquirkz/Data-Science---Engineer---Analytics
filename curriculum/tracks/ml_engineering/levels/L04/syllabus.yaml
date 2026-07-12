@@ -1,0 +1,50 @@
+{
+  "track": "ml_engineering",
+  "level": "L04",
+  "level_number": 4,
+  "title": "Reproducible Training Pipelines",
+  "summary": "Capture seeds, configs, and dependencies so results can be repeated.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "ml_engineering:L03"
+  ],
+  "competencies": [
+    "Configuration surfaces",
+    "Artifact capture",
+    "Experiment traceability"
+  ],
+  "mission_ids": [
+    "p050-mle-l04-m01"
+  ],
+  "project_ids": [
+    "p050"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/ml_engineering/L04/ml_engineering_l04_reproducible_training_pipelines.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in ML Engineering.",
+    "Describe one failure mode that can invalidate ML Engineering conclusions at L04."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/neuron_spike_train_modeling/notebooks/neuron_spike_train_modeling.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.neuron_spike_train_modeling.src.pipeline"
+  }
+}

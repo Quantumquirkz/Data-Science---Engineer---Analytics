@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L03",
+  "level_number": 3,
+  "title": "Databases And Data Modeling",
+  "summary": "Choose tables, keys, and grain that preserve semantics.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L02"
+  ],
+  "competencies": [
+    "Normalization",
+    "Join integrity",
+    "Entity boundaries"
+  ],
+  "mission_ids": [
+    "p041-de-l03-m01"
+  ],
+  "project_ids": [
+    "p041"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L03/data_engineering_l03_databases_and_data_modeling.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L03."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/large_scale_recommendation_for_learning_paths/notebooks/large_scale_recommendation_for_learning_paths.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.large_scale_recommendation_for_learning_paths.src.pipeline"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "track": "data_science",
+  "level": "L02",
+  "level_number": 2,
+  "title": "Python, NumPy, And pandas",
+  "summary": "Use the core Python data stack to inspect, clean, and transform evidence.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_science:L01"
+  ],
+  "competencies": [
+    "Arrays",
+    "Data frames",
+    "Vectorized thinking"
+  ],
+  "mission_ids": [
+    "p014-ds-l02-m01"
+  ],
+  "project_ids": [
+    "p014"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_science/L02/data_science_l02_python_numpy_and_pandas.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Science.",
+    "Describe one failure mode that can invalidate Data Science conclusions at L02."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/demand_forecasting_for_cold_chain_logistics/notebooks/demand_forecasting_for_cold_chain_logistics.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.demand_forecasting_for_cold_chain_logistics.src.pipeline"
+  }
+}

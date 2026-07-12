@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L05",
+  "level_number": 5,
+  "title": "Business Metrics And Decisions",
+  "summary": "Translate metrics into operational levers and constraints.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L04"
+  ],
+  "competencies": [
+    "North-star metrics",
+    "Trade-off analysis",
+    "Sensitivity to assumptions"
+  ],
+  "mission_ids": [
+    "p041-da-l05-m01"
+  ],
+  "project_ids": [
+    "p041"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L05/data_analytics_l05_business_metrics_and_decisions.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L05."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/large_scale_recommendation_for_learning_paths/notebooks/large_scale_recommendation_for_learning_paths.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.large_scale_recommendation_for_learning_paths.src.pipeline"
+  }
+}

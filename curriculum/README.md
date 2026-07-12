@@ -1,53 +1,39 @@
 # Curriculum
 
-This directory is the teaching map for the repository. It organizes the 100
-portfolio projects into role-based learning tracks without duplicating project
-folders.
+This directory is the teaching operating system for the repository.
 
-The curriculum is designed from first principles: mathematics, programming,
-data representation, statistics, machine learning, data engineering, ML
-engineering, and scientific computing all reinforce each other. A learner should
-be able to move from a concept, to a notebook, to a project, to a reproducible
-portfolio artifact.
+It organizes **five independent role tracks**, each with **ten levels**, while keeping the 100 portfolio projects in their existing slug-based folders. The system is teaching-first, mission-linked, self-paced, and open-source by design.
 
 ## Tracks
 
-- `data_analytics` - metrics, reporting, exploratory analysis, dashboards, and communication.
-- `data_science` - statistics, feature engineering, machine learning, evaluation, and interpretation.
-- `data_engineering` - ingestion, schemas, validation, transformations, and scalable data workflows.
-- `ml_engineering` - training pipelines, inference interfaces, reproducibility, and operational patterns.
-- `scientific_computing` - numerical simulation, physics-inspired modeling, uncertainty, and scientific visualization.
+- [Data Analytics](tracks/data_analytics/README.md)
+- [Data Science](tracks/data_science/README.md)
+- [Data Engineering](tracks/data_engineering/README.md)
+- [ML Engineering](tracks/ml_engineering/README.md)
+- [Scientific Computing](tracks/scientific_computing/README.md)
 
-## Operating Model
+## Core Documents
 
-Projects remain under `projects/<slug>/`. Stable IDs such as `p001` live in each `project.yaml` and in `projects/registry.yaml`.
+- [Framework](framework/README.md)
+- [Learning Pathways](pathways/README.md)
+- [Foundational Body Of Knowledge](foundational_body_of_knowledge.md)
+- [Study Plan](study_plan.md)
+- [Bibliography And Reference Spine](bibliography.md)
 
-## Core Curriculum Documents
-
-- [Foundational Body Of Knowledge](foundational_body_of_knowledge.md) -
-  detailed conceptual spine from mathematical and programming fundamentals to
-  capstone systems.
-- [Study Plan](study_plan.md) - phase-based route from orientation to portfolio
-  critique.
-- [Bibliography And Reference Spine](bibliography.md) - authoritative sources
-  used to expand the curriculum and validate explanations.
-
-## Learning Loop
+## Mission Graph
 
 ```mermaid
 flowchart LR
-    concept["Concept"] --> note["Curriculum note"]
-    note --> lab["Lab or notebook"]
-    lab --> project["Portfolio project"]
-    project --> validation["Validation or smoke check"]
-    validation --> reflection["Limitations and next reading"]
-    reflection --> concept
+    level[Track level] --> notebook[Notebook or lesson]
+    notebook --> mission[Mission registry]
+    mission --> project[Project README and code]
+    project --> evidence[Local evidence]
+    evidence --> reflection[Reflection or extension]
+    reflection --> level
 ```
 
-## Study Principle
+## Current Implementation Status
 
-Every concept should eventually connect to one of three artifacts:
-
-- a notebook that teaches or explores it;
-- a project that implements it;
-- a validation check that proves the implementation is reproducible.
+- All five tracks expose implemented L01-L10 level surfaces.
+- Every level has a central notebook, syllabus, README, and mission mapping.
+- Project-local notebooks remain the applied depth layer behind each mission.

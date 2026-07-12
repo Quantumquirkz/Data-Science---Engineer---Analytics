@@ -1,0 +1,50 @@
+{
+  "track": "data_engineering",
+  "level": "L06",
+  "level_number": 6,
+  "title": "Orchestration And Batch Systems",
+  "summary": "Sequence jobs, retries, and recovery paths for batch workflows.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_engineering:L05"
+  ],
+  "competencies": [
+    "DAG logic",
+    "Retries",
+    "Backfills"
+  ],
+  "mission_ids": [
+    "p060-de-l06-m01"
+  ],
+  "project_ids": [
+    "p060"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_engineering/L06/data_engineering_l06_orchestration_and_batch_systems.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Engineering.",
+    "Describe one failure mode that can invalidate Data Engineering conclusions at L06."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/plasma_experiment_parameter_inference/notebooks/plasma_experiment_parameter_inference.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.plasma_experiment_parameter_inference.src.pipeline"
+  }
+}

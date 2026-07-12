@@ -3,16 +3,17 @@
 This repository follows a teaching-first, metadata-backed portfolio-lab
 architecture. It is built to teach Data Analytics, Data Science, Data
 Engineering, ML Engineering, and Scientific Computing through 100 practical
-projects.
+projects and five ten-level role tracks.
 
 ## System Shape
 
 ```mermaid
 flowchart TB
     root["Repository root"]
-    curriculum["curriculum/<br/>tracks and modules"]
+    curriculum["curriculum/<br/>tracks, levels, framework"]
     projects["projects/<br/>100 project folders"]
     registry["project.yaml + registry.yaml<br/>IDs and aliases"]
+    missions["curriculum/missions/<br/>mission graph"]
     templates["templates/<br/>role-specific scaffolds"]
     core["src/data_intelligence_engineering/<br/>shared infrastructure"]
     lifecycle["data models reports notebooks<br/>artifact lifecycle"]
@@ -26,7 +27,9 @@ flowchart TB
     root --> docs
     projects --> registry
     curriculum --> registry
+    curriculum --> missions
     core --> registry
+    missions --> registry
     registry --> docs
 ```
 
@@ -41,9 +44,10 @@ flowchart TB
 
 ## Teaching Layer
 
-`curriculum/` is the learning map. It organizes role-based tracks and reusable
-modules, but it does not duplicate project code. Track READMEs point learners to
-project READMEs and notebooks.
+`curriculum/` is the learning map. It organizes role-based tracks, reusable
+modules, level manifests, and mission metadata, but it does not duplicate
+project code. Track READMEs point learners to level READMEs, central notebooks,
+and project READMEs.
 
 Tracks:
 

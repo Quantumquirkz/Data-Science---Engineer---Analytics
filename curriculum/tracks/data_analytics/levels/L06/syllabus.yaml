@@ -1,0 +1,50 @@
+{
+  "track": "data_analytics",
+  "level": "L06",
+  "level_number": 6,
+  "title": "Experiment And Product Analytics",
+  "summary": "Measure interventions, funnels, and behavioral changes with discipline.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "data_analytics:L05"
+  ],
+  "competencies": [
+    "A/B test logic",
+    "Bias in instrumentation",
+    "Attribution boundaries"
+  ],
+  "mission_ids": [
+    "p046-da-l06-m01"
+  ],
+  "project_ids": [
+    "p046"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/data_analytics/L06/data_analytics_l06_experiment_and_product_analytics.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in Data Analytics.",
+    "Describe one failure mode that can invalidate Data Analytics conclusions at L06."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/material_fatigue_prediction/notebooks/material_fatigue_prediction.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.material_fatigue_prediction.src.pipeline"
+  }
+}

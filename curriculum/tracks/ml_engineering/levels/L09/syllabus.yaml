@@ -1,0 +1,50 @@
+{
+  "track": "ml_engineering",
+  "level": "L09",
+  "level_number": 9,
+  "title": "Scalable ML And Responsible AI",
+  "summary": "Balance system scale with fairness, robustness, and governance.",
+  "status": "implemented",
+  "estimated_effort_hours": 12,
+  "delivery_mode": [
+    "uv",
+    "colab"
+  ],
+  "prerequisites": [
+    "ml_engineering:L08"
+  ],
+  "competencies": [
+    "Resource limits",
+    "Bias review",
+    "Operational risk"
+  ],
+  "mission_ids": [
+    "p090-mle-l09-m01"
+  ],
+  "project_ids": [
+    "p090"
+  ],
+  "notebook_paths": [
+    "notebooks/tracks/ml_engineering/L09/ml_engineering_l09_scalable_ml_and_responsible_ai.ipynb"
+  ],
+  "diagnostics": [
+    "Explain the difference between observation, metric, and decision in ML Engineering.",
+    "Describe one failure mode that can invalidate ML Engineering conclusions at L09."
+  ],
+  "math_layers": {
+    "applied": "Use formulas operationally and interpret outputs in domain language.",
+    "graduate": "Derive the main equations and state assumptions explicitly.",
+    "research": "Challenge the assumptions, propose variants, and discuss unresolved limitations."
+  },
+  "evidence": [
+    "Read the level README and reproduce the key derivation or concept map.",
+    "Run the notebook or project command associated with the mission.",
+    "Write a short reflection describing assumptions, limitations, and next experiments."
+  ],
+  "project_notebook_paths": [
+    "projects/sports_biomechanics_motion_analyzer/notebooks/sports_biomechanics_motion_analyzer.ipynb"
+  ],
+  "commands": {
+    "run": "PYTHONPATH=src:. uv run python -m projects.sports_biomechanics_motion_analyzer.src.pipeline"
+  }
+}
